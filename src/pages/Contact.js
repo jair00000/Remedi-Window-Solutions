@@ -220,7 +220,7 @@ const Contact = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden pt-32 lg:pt-36 bg-gray-900 dark:bg-gray-900 transition-colors duration-300">
+      <section className="relative min-h-[100vh] overflow-hidden bg-gray-900 dark:bg-gray-900 transition-colors duration-300">
         {/* Three Column Diagonal Background */}
         <div className="absolute inset-0 flex">
           {/* Column 1 */}
@@ -267,18 +267,18 @@ const Contact = () => {
           </div>
         </div>
         
-        <Container className="relative z-10 text-center text-white flex items-center justify-center h-full">
+        <Container className="relative z-10 text-center text-white flex items-center justify-center min-h-[100vh] pt-28 sm:pt-32 lg:pt-36 px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 animate-fade-in">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
               <span className="text-primary-500">CONTACT</span>
               <span className="block text-white">REMEDI WINDOW SOLUTIONS</span>
             </h1>
-            <p className="text-sm md:text-base mb-8 text-white animate-slide-up max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 text-white animate-slide-up max-w-3xl mx-auto leading-relaxed">
               Get in touch with North Mississippi's premier window tinting experts. We serve Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa with professional window tinting services.
             </p>
             
-            {/* 2x2 Grid of Info Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto animate-slide-up">
+            {/* 2x2 Grid of Info Cards - Hidden on mobile, visible on tablet+ */}
+            <div className="hidden md:grid md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto animate-slide-up">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 shadow-lg flex items-center space-x-4">
                 <TrophyIcon className="h-8 w-8 text-white flex-shrink-0" />
                 <h3 className="text-lg font-semibold text-white">Best Quality Films</h3>
@@ -301,7 +301,7 @@ const Contact = () => {
       </section>
 
       {/* Contact & Quote Section */}
-      <Section>
+      <Section id="quote-form">
         <Container>
           <div className="max-w-6xl mx-auto">
             {/* Header */}
@@ -971,7 +971,7 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow duration-200">
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-primary-100 rounded-full">
+                  <div className="p-3 rounded-full" style={{backgroundColor: '#fecaca'}}>
                     <info.icon className="h-6 w-6 text-primary-600" />
                   </div>
                 </div>

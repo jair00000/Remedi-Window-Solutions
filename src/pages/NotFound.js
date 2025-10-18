@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { HomeIcon, WrenchScrewdriverIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Section from '../components/UI/Section';
 import Container from '../components/UI/Container';
 import Button from '../components/UI/Button';
@@ -40,29 +41,35 @@ const NotFound = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl mb-4">🏠</div>
+              <div className="text-center group">
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors duration-300">
+                  <HomeIcon className="w-8 h-8 text-primary-600" />
+                </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Home</h3>
                 <p className="text-gray-600 mb-4">Return to our homepage</p>
-                <Link to="/" className="text-primary-600 hover:text-primary-700 font-medium">
+                <Link to="/" className="text-primary-600 hover:text-primary-700 font-medium transition-colors duration-300">
                   Go to Home →
                 </Link>
               </div>
               
-              <div className="text-center">
-                <div className="text-4xl mb-4">🔧</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Services</h3>
-                <p className="text-gray-600 mb-4">View our window services</p>
-                <Link to="/services" className="text-primary-600 hover:text-primary-700 font-medium">
-                  View Services →
+              <div className="text-center group">
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors duration-300">
+                  <WrenchScrewdriverIcon className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">View Films</h3>
+                <p className="text-gray-600 mb-4">View our window films</p>
+                <Link to="/services" className="text-primary-600 hover:text-primary-700 font-medium transition-colors duration-300">
+                  View Films →
                 </Link>
               </div>
               
-              <div className="text-center">
-                <div className="text-4xl mb-4">📞</div>
+              <div className="text-center group">
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors duration-300">
+                  <PhoneIcon className="w-8 h-8 text-primary-600" />
+                </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Contact</h3>
                 <p className="text-gray-600 mb-4">Get in touch with us</p>
-                <Link to="/contact" className="text-primary-600 hover:text-primary-700 font-medium">
+                <Link to="/contact" className="text-primary-600 hover:text-primary-700 font-medium transition-colors duration-300">
                   Contact Us →
                 </Link>
               </div>

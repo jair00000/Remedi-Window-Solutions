@@ -105,7 +105,7 @@ const Footer = () => {
                </p>
               <Link
                 to="/contact"
-                className="inline-block bg-gradient-to-r from-red to-primary-600 hover:from-primary-600 hover:to-primary-700 text-light font-bold py-4 px-8 rounded-xl transition-all duration-300 uppercase tracking-wide shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-block w-full sm:w-auto text-center bg-gradient-to-r from-red to-primary-600 hover:from-primary-600 hover:to-primary-700 text-light font-bold py-4 px-8 sm:px-8 md:px-12 rounded-xl transition-all duration-300 uppercase tracking-wide shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 GET QUOTE
               </Link>
@@ -137,9 +137,9 @@ const Footer = () => {
                    </Link>
                  </li>
                  <li>
-                   <Link to="/blogs" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
+                   <Link to="/blog" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
                      <span className="w-2 h-2 bg-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                     Blogs
+                     Blog
                    </Link>
                  </li>
                  <li>
@@ -159,19 +159,19 @@ const Footer = () => {
               </h4>
                <ul className="space-y-4">
                  <li>
-                   <Link to="/services" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
+                   <Link to="/residential" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
                      <span className="w-2 h-2 bg-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                      Residential
                    </Link>
                  </li>
                  <li>
-                   <Link to="/services" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
+                   <Link to="/commercial" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
                      <span className="w-2 h-2 bg-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                      Commercial
                    </Link>
                  </li>
                  <li>
-                   <Link to="/services" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
+                   <Link to="/institutional" className="text-neutral-300 hover:text-light transition-all duration-300 flex items-center group">
                      <span className="w-2 h-2 bg-red rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                      Government & Buildings
                    </Link>

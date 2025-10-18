@@ -39,7 +39,7 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      <div className="relative min-h-[100vh] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -53,45 +53,47 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
         </div>
 
-        <div className="container-custom relative z-10 pt-48 lg:pt-52 pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
+        <div className="container-custom relative z-10 flex items-center justify-center min-h-[100vh] pt-28 sm:pt-32 lg:pt-36 px-4 sm:px-6">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 sm:gap-12 items-center justify-center w-full max-w-7xl">
             {/* Left Content */}
-            <div className="text-white space-y-8">
-              <div className="space-y-6">
-                <h1 className="text-5xl lg:text-6xl font-heading font-bold leading-tight">
+            <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
+              <div className="space-y-4 sm:space-y-6">
+                <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
                   About <span className="text-primary-400">Remedi</span>
-          </h1>
-                <h2 className="text-2xl lg:text-3xl font-semibold text-primary-300">
+                </h1>
+                <h2 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold text-primary-300">
                   Professional Window Tinting Services
                 </h2>
-                <p className="text-lg lg:text-xl text-gray-200 leading-relaxed">
+                <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   Enhancing comfort, safety, and energy efficiency through professional window tinting services for homes, businesses, and institutions across Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
                 </p>
-                <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
+                <p className="text-xs sm:text-sm lg:text-base xl:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                   We deliver lasting protection and performance with Avery Dennison's best-quality window films, designed for solar control, privacy, security, and decorative applications. Experience clarity, comfort, and craftsmanship from a team built on trust and professionalism.
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
-                  className="bg-primary-600 hover:bg-primary-700 text-white border-primary-600 hover:border-primary-700"
+                  className="bg-primary-600 hover:bg-primary-700 text-white border-primary-600 hover:border-primary-700 text-sm sm:text-base px-4 sm:px-6 lg:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                  onClick={() => window.location.href = '/contact#quote-form'}
                 >
                   Get Your Free Estimate
                 </Button>
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-gray-900"
+                  className="border-white text-white hover:bg-primary-600 hover:text-white text-sm sm:text-base px-4 sm:px-6 lg:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                  onClick={() => window.location.href = '/services'}
                 >
-                  Learn More
+                  View Films
                 </Button>
               </div>
             </div>
 
-            {/* Right Feature Boxes */}
-            <div className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Right Feature Boxes - Hidden on mobile, visible on tablet+ */}
+            <div className="hidden md:block space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Feature Box 1 */}
                 <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-4">
@@ -140,7 +142,7 @@ const About = () => {
                 {/* Feature Box 4 */}
                 <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/20 rounded-xl flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mr-4" style={{backgroundColor: '#fed7aa'}}>
                       <MapPinIcon className="w-6 h-6 text-orange-600 dark:text-orange-400" />
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -149,8 +151,8 @@ const About = () => {
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
                     Proudly serving North Mississippi and Tuscaloosa
-          </p>
-        </div>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -181,6 +183,7 @@ const About = () => {
             <Button 
               size="lg" 
               className="bg-primary-600 hover:bg-primary-700 text-white border-primary-600 hover:border-primary-700 px-8 py-4 text-lg"
+              onClick={() => window.location.href = '/contact#quote-form'}
             >
               Get Your Free Estimate
             </Button>
@@ -297,7 +300,7 @@ const About = () => {
             {/* Work Ethics */}
             <div className="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 dark:border-gray-700">
               <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-orange-100 dark:bg-orange-900/20 rounded-xl flex items-center justify-center mr-5">
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center mr-5" style={{backgroundColor: '#fed7aa'}}>
                   <svg className="w-7 h-7 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -320,11 +323,11 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
-            const colorClasses = {
-              blue: 'bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400',
-              green: 'bg-green-100 dark:bg-green-900/20 text-green-600 dark:text-green-400',
-              purple: 'bg-purple-100 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400',
-              orange: 'bg-orange-100 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400'
+            const colorStyles = {
+              blue: { backgroundColor: '#dbeafe', color: '#2563eb' },
+              green: { backgroundColor: '#dcfce7', color: '#16a34a' },
+              purple: { backgroundColor: '#e9d5ff', color: '#9333ea' },
+              orange: { backgroundColor: '#fecaca', color: '#dc2626' }
             };
             
             return (
@@ -333,7 +336,7 @@ const About = () => {
                 className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 dark:border-gray-700"
               >
                 {/* Icon */}
-                <div className={`w-16 h-16 ${colorClasses[stat.color]} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300" style={colorStyles[stat.color]}>
                   <IconComponent className="w-8 h-8" />
                 </div>
                 
@@ -445,7 +448,8 @@ const About = () => {
             onMouseLeave={(e) => {
               e.target.style.backgroundColor = 'white';
               e.target.style.transform = 'translateY(0)';
-            }}>
+            }}
+            onClick={() => window.location.href = '/contact#quote-form'}>
               Get Your Free Estimate
             </button>
             <button style={{

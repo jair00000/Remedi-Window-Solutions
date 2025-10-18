@@ -1,13 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import ThemeToggle from '../UI/ThemeToggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const dropdownRef = useRef(null);
+
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -16,9 +19,9 @@ const Navbar = () => {
   ];
 
   const solutionsMenu = [
-    { name: 'Residential', href: '/services#residential' },
-    { name: 'Commercial', href: '/services#commercial' },
-    { name: 'Government & Schools', href: '/services#government-schools' },
+    { name: 'Residential', href: '/residential' },
+    { name: 'Commercial', href: '/commercial' },
+    { name: 'Government & Schools', href: '/institutional' },
   ];
 
   // Close dropdown when clicking outside
@@ -29,11 +32,19 @@ const Navbar = () => {
       }
     };
 
+    const handleMobileClickOutside = (event) => {
+      if (isMenuOpen && !event.target.closest('.mobile-menu-container')) {
+        setIsMobileSolutionsOpen(false);
+      }
+    };
+
     document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleMobileClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('mousedown', handleMobileClickOutside);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -82,9 +93,12 @@ const Navbar = () => {
               {/* Solutions Dropdown */}
               <div className="relative" ref={dropdownRef}>
                 <button
-                  onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+                  onClick={() => {
+                    console.log('Solutions dropdown clicked, current state:', isSolutionsOpen);
+                    setIsSolutionsOpen(!isSolutionsOpen);
+                  }}
                   className={`flex items-center space-x-1 font-medium transition-colors duration-200 ${
-                    location.pathname === '/services'
+                    location.pathname === '/services' || location.pathname === '/residential' || location.pathname === '/commercial' || location.pathname === '/institutional'
                       ? 'text-primary-500'
                       : 'text-gray-700 dark:text-gray-300 hover:text-primary-500'
                   }`}
@@ -101,14 +115,18 @@ const Navbar = () => {
                 {isSolutionsOpen && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50 transition-colors duration-300">
                     {solutionsMenu.map((item) => (
-                      <Link
+                      <button
                         key={item.name}
-                        to={item.href}
-                        onClick={() => setIsSolutionsOpen(false)}
-                        className="block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary-500 transition-colors duration-200"
+                        onClick={() => {
+                          // Close dropdown first
+                          setIsSolutionsOpen(false);
+                          // Navigate using React Router
+                          navigate(item.href);
+                        }}
+                        className="block w-full text-left px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary-500 transition-colors duration-200 cursor-pointer"
                       >
                         {item.name}
-                      </Link>
+                      </button>
                     ))}
                     <div className="border-t border-gray-200 dark:border-gray-700 my-1"></div>
                     <Link
@@ -135,7 +153,14 @@ const Navbar = () => {
             <div className="lg:hidden flex items-center space-x-2">
               <ThemeToggle />
               <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={() => {
+                  console.log('Mobile menu button clicked, current state:', isMenuOpen);
+                  setIsMenuOpen(!isMenuOpen);
+                  // Close mobile solutions dropdown when main menu is closed
+                  if (isMenuOpen) {
+                    setIsMobileSolutionsOpen(false);
+                  }
+                }}
                 className="p-2 rounded-md transition-colors duration-200 text-gray-700 dark:text-gray-300 hover:text-primary-500"
               >
               <svg
@@ -166,8 +191,8 @@ const Navbar = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="lg:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg mt-2 transition-colors duration-300">
+            <div className="lg:hidden relative z-50 mobile-menu-container">
+              <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg mt-2 transition-colors duration-300 relative z-50">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
@@ -186,9 +211,15 @@ const Navbar = () => {
                 {/* Mobile Solutions Dropdown */}
                 <div>
                   <button
-                    onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      console.log('Mobile Solutions dropdown clicked, current state:', isMobileSolutionsOpen);
+                      console.log('Setting mobile solutions open to:', !isMobileSolutionsOpen);
+                      setIsMobileSolutionsOpen(!isMobileSolutionsOpen);
+                    }}
                     className={`flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                      location.pathname === '/services'
+                      location.pathname === '/services' || location.pathname === '/residential' || location.pathname === '/commercial' || location.pathname === '/institutional'
                         ? 'text-primary-500 bg-primary-50 dark:bg-primary-900/20'
                         : 'text-gray-700 dark:text-gray-300 hover:text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-700'
                     }`}
@@ -196,32 +227,34 @@ const Navbar = () => {
                     <span>Solutions</span>
                     <ChevronDownIcon 
                       className={`w-4 h-4 transition-transform duration-200 ${
-                        isSolutionsOpen ? 'rotate-180' : ''
+                        isMobileSolutionsOpen ? 'rotate-180' : ''
                       }`} 
                     />
                   </button>
                   
                   {/* Mobile Dropdown Items */}
-                  {isSolutionsOpen && (
-                    <div className="ml-4 mt-1 space-y-1">
+                  {isMobileSolutionsOpen && (
+                    <div className="ml-4 mt-1 space-y-1 relative z-50">
                       {solutionsMenu.map((item) => (
-                        <Link
+                        <button
                           key={item.name}
-                          to={item.href}
                           onClick={() => {
+                            // Close menus first
                             setIsMenuOpen(false);
-                            setIsSolutionsOpen(false);
+                            setIsMobileSolutionsOpen(false);
+                            // Navigate using React Router
+                            navigate(item.href);
                           }}
-                          className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                          className="block w-full text-left px-3 py-2 rounded-md text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
                         >
                           {item.name}
-                        </Link>
+                        </button>
                       ))}
                       <Link
                         to="/services"
                         onClick={() => {
                           setIsMenuOpen(false);
-                          setIsSolutionsOpen(false);
+                          setIsMobileSolutionsOpen(false);
                         }}
                         className="block px-3 py-2 rounded-md text-sm font-medium text-primary-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
                       >
