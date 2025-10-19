@@ -3,26 +3,26 @@ import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 // Components
-import Layout from './components/Layout/Layout';
-import ScrollToTop from './components/Common/ScrollToTop';
-import { ThemeProvider } from './contexts/ThemeContext';
+import Layout from './components/Layout/Layout.jsx';
+import ScrollToTop from './components/Common/ScrollToTop.jsx';
+import { ThemeProvider } from './contexts/ThemeContext.jsx';
 
 // Pages
-import Home from './pages/Home';
-import About from './pages/About';
-import ServiceFilms from './pages/service-films';
-import Projects from './pages/Projects';
-import Residential from './pages/Residential';
-import Commercial from './pages/Commercial';
-import Institutional from './pages/Institutional';
-import Gallery from './pages/Gallery';
-import Blog from './pages/Blog';
-import FAQs from './pages/FAQs';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
-import CookiePolicy from './pages/CookiePolicy';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import ServiceFilms from './pages/service-films.jsx';
+import Projects from './pages/Projects.jsx';
+import Residential from './pages/Residential.jsx';
+import Commercial from './pages/Commercial.jsx';
+import Institutional from './pages/Institutional.jsx';
+import Gallery from './pages/Gallery.jsx';
+import Blog from './pages/Blog.jsx';
+import FAQs from './pages/FAQs.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import TermsOfService from './pages/TermsOfService.jsx';
+import CookiePolicy from './pages/CookiePolicy.jsx';
+import Contact from './pages/Contact.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 function App() {
   return (
