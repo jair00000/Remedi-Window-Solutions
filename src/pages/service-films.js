@@ -9,7 +9,7 @@ const CapabilityBarForce = ({ level, text }) => {
     return (
       <div className="flex flex-col h-20 text-left items-start">
         <div className="flex-1 flex items-center">
-          <p className="text-xs text-gray-700 dark:text-black leading-tight">{text}</p>
+          <p className="text-xs text-gray-700 dark:text-white leading-tight">{text}</p>
         </div>
         <div className="flex space-x-0.5 justify-start items-start" style={{width: 'fit-content'}}>
           {level === 'none' && (
@@ -842,27 +842,27 @@ const ServiceFilms = () => {
           <div className="lg:hidden space-y-6">
             {/* Dual Reflective Films */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Dual Reflective Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-black mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
                   (DR OptiTune / OptiShade)
                 </span>
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Solar Control</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Solar Control</h4>
                   <CapabilityBarForce level="high" text="High heat rejection" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Security / Safety</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security / Safety</h4>
                   <CapabilityBarForce level="none" text="No dedicated safety version listed" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Privacy / Daytime Reflectivity</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Privacy / Daytime Reflectivity</h4>
                   <CapabilityBarForce level="high" text="Yes – daytime privacy, low-reflectance interior" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Aesthetic</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Aesthetic</h4>
                   <CapabilityBarForce level="none" text="Not primarily decorative" />
                 </div>
               </div>
@@ -870,27 +870,27 @@ const ServiceFilms = () => {
 
             {/* Spectrally Selective Films */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Spectrally Selective Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-black mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
                   (SP e-Lite i)
                 </span>
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Solar Control</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Solar Control</h4>
                   <CapabilityBarForce level="high" text="Yes – efficient heat control with high VLT" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Security / Safety</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security / Safety</h4>
                   <CapabilityBarForce level="none" text="No safety version" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Privacy / Daytime Reflectivity</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Privacy / Daytime Reflectivity</h4>
                   <CapabilityBarForce level="partial" text="Moderate privacy (clear)" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Aesthetic</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Aesthetic</h4>
                   <CapabilityBarForce level="none" text="Not decorative – maintains natural look" />
                 </div>
               </div>
@@ -898,27 +898,27 @@ const ServiceFilms = () => {
 
             {/* Neutral Films */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Neutral Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-black mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
                   (NT PerLite Ceramic i / NT Natura i)
                 </span>
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Solar Control</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Solar Control</h4>
                   <CapabilityBarForce level="high" text="Yes – solar and glare reduction" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Security / Safety</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security / Safety</h4>
                   <CapabilityBarForce level="high" text="Yes – PerLite Ceramic 35 Safety (6 & 10 mil)" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Privacy / Daytime Reflectivity</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Privacy / Daytime Reflectivity</h4>
                   <CapabilityBarForce level="partial" text="Partial privacy (depending on VLT)" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Aesthetic</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Aesthetic</h4>
                   <CapabilityBarForce level="none" text="Not decorative" />
                 </div>
               </div>
@@ -926,27 +926,27 @@ const ServiceFilms = () => {
 
             {/* Reflective Films */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Reflective Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-black mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
                   (R Silver i, R Silver Low E, R Silver Safety)
                 </span>
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Solar Control</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Solar Control</h4>
                   <CapabilityBarForce level="high" text="Strong solar rejection" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Security / Safety</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security / Safety</h4>
                   <CapabilityBarForce level="high" text="Yes – R Silver Safety (4 mil & 9 mil)" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Privacy / Daytime Reflectivity</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Privacy / Daytime Reflectivity</h4>
                   <CapabilityBarForce level="high" text="Excellent daytime privacy" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Aesthetic</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Aesthetic</h4>
                   <CapabilityBarForce level="none" text="Not decorative" />
                 </div>
               </div>
@@ -954,27 +954,27 @@ const ServiceFilms = () => {
 
             {/* Decorative Films */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Decorative / Specialty Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-black mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
                   (DS Matte, DS Black, DS White, DS UV Filter)
                 </span>
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Solar Control</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Solar Control</h4>
                   <CapabilityBarForce level="partial" text="Minimal solar effect (except UV Filter blocks UV)" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Security / Safety</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Security / Safety</h4>
                   <CapabilityBarForce level="none" text="Not safety-rated" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Privacy / Daytime Reflectivity</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Privacy / Daytime Reflectivity</h4>
                   <CapabilityBarForce level="high" text="Yes – frosted / blackout / whiteout privacy" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Aesthetic</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Aesthetic</h4>
                   <CapabilityBarForce level="high" text="Yes – decorative applications" />
                 </div>
               </div>
@@ -1086,28 +1086,28 @@ const ServiceFilms = () => {
           <div className="lg:hidden space-y-6">
             {/* Residential Homes */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Residential Homes
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Dual Reflective</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Dual Reflective</h4>
                   <CapabilityBarForce level="high" text="Excellent – privacy + comfort" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Spectrally Selective</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Spectrally Selective</h4>
                   <CapabilityBarForce level="high" text="Ideal – clear glass aesthetic" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Neutral Ceramic / Natura</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Neutral Ceramic / Natura</h4>
                   <CapabilityBarForce level="high" text="Popular – neutral look + heat reduction" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Reflective Silver Series</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Reflective Silver Series</h4>
                   <CapabilityBarForce level="partial" text="Less common (aesthetic preference)" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Specialty (DS)</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Specialty (DS)</h4>
                   <CapabilityBarForce level="high" text="For bathrooms, partitions, design elements" />
                 </div>
               </div>
@@ -1115,28 +1115,28 @@ const ServiceFilms = () => {
 
             {/* Commercial Buildings / Offices */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Commercial Buildings / Offices
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Dual Reflective</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Dual Reflective</h4>
                   <CapabilityBarForce level="high" text="Yes – privacy and cooling" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Spectrally Selective</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Spectrally Selective</h4>
                   <CapabilityBarForce level="high" text="Yes – high daylight and energy efficiency" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Neutral Ceramic / Natura</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Neutral Ceramic / Natura</h4>
                   <CapabilityBarForce level="high" text="Yes – balanced performance and aesthetics" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Reflective Silver Series</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Reflective Silver Series</h4>
                   <CapabilityBarForce level="high" text="Yes – energy efficiency and bold appearance" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Specialty (DS)</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Specialty (DS)</h4>
                   <CapabilityBarForce level="high" text="Used for branding / frosted glass / conference rooms" />
                 </div>
               </div>
@@ -1144,28 +1144,28 @@ const ServiceFilms = () => {
 
             {/* Government Facilities / Schools */}
             <Card className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Government Facilities / Schools
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Dual Reflective</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Dual Reflective</h4>
                   <CapabilityBarForce level="high" text="Yes – energy savings + comfort" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Spectrally Selective</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Spectrally Selective</h4>
                   <CapabilityBarForce level="high" text="Yes – natural light with UV protection" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Neutral Ceramic / Natura</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Neutral Ceramic / Natura</h4>
                   <CapabilityBarForce level="high" text="Yes – durability and UV block" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Reflective Silver Series</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Reflective Silver Series</h4>
                   <CapabilityBarForce level="high" text="Yes – strong solar control and security with Safety films" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 dark:text-black mb-2">Decorative / Specialty (DS)</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Decorative / Specialty (DS)</h4>
                   <CapabilityBarForce level="high" text="Yes – privacy partitions and design applications" />
                 </div>
               </div>
