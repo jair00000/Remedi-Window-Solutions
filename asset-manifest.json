@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Remedi-Window-Solutions/static/css/main.c6c5ef2d.css",
+    "main.js": "/Remedi-Window-Solutions/static/js/main.7ad66781.js",
+    "index.html": "/Remedi-Window-Solutions/index.html",
+    "main.c6c5ef2d.css.map": "/Remedi-Window-Solutions/static/css/main.c6c5ef2d.css.map",
+    "main.7ad66781.js.map": "/Remedi-Window-Solutions/static/js/main.7ad66781.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6c5ef2d.css",
+    "static/js/main.7ad66781.js"
+  ]
+}
