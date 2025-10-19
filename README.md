@@ -1,4 +1,4 @@
-# Remedi Window Solution Website
+# Remedi Window Solution Website - GitHub Pages Deployment
 
 A professional, responsive website for Remedi Window Solution - a medium-sized business specializing in window installation, repair, and replacement services.
 
