@@ -37,6 +37,12 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Verify build output
+      run: |
+        ls -la build/
+        echo "Build contents:"
+        find build -type f -name "*.html" -o -name "*.js" -o -name "*.css" | head -10
+
     - name: Setup Pages
       uses: actions/configure-pages@v4
 
