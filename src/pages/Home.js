@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[100vh] overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
+      <section className="relative h-[70vh] overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -70,16 +70,16 @@ const Home = () => {
         ></div>
         <div className="absolute inset-0 bg-black/60"></div>
         
-        <Container className="relative z-10 text-center text-white flex items-center justify-center min-h-[100vh] px-4 sm:px-6">
+        <Container className="relative z-10 text-center text-white flex items-center justify-center h-full px-4 sm:px-6 pt-20">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-3 sm:mb-4 animate-fade-in leading-tight">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 animate-fade-in leading-tight">
               <span className="text-primary-500 block xs:inline">NORTH MISSISSIPPI'S</span>
               <span className="block text-white mt-1 xs:mt-0 xs:ml-2">WINDOW TINTING EXPERTS</span>
             </h1>
-            <p className="text-base xs:text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6 text-white animate-slide-up max-w-3xl mx-auto leading-relaxed px-2">
+            <p className="text-sm md:text-base mb-8 text-white animate-slide-up max-w-3xl mx-auto leading-relaxed px-2">
               Remedi Window Solutions provides professional window tinting services for residential, commercial, and institutional clients across Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-slide-up px-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up px-4">
               <Button 
                 size="lg" 
                 className="bg-primary-500 hover:bg-primary-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
