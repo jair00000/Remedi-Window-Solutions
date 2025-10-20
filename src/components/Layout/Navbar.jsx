@@ -62,7 +62,7 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/images/icons&logo/remedi-logo.svg" 
+                src={`${import.meta.env.BASE_URL}images/icons&logo/remedi-logo.svg`} 
                 alt="Remedi Window Solutions Logo" 
                 className="w-20 h-20 object-contain dark:brightness-0 dark:invert"
               />

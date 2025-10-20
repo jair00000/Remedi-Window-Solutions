@@ -107,7 +107,7 @@ const ServiceFilms = () => {
             <div className="text-center">
               <div className="flex justify-center mb-8">
                 <img 
-                  src="/images/icons&logo/Avery-Dennsion-Logo.webp" 
+                  src={`${import.meta.env.BASE_URL}images/icons&logo/Avery-Dennsion-Logo.webp`} 
                   alt="Avery Dennison Films Logo" 
                   className="h-24 object-contain"
                 />
@@ -163,7 +163,7 @@ const ServiceFilms = () => {
         <div className="max-w-6xl mx-auto">
                   <div className="text-center mb-12">
                     <img
-                      src="/images/icons&logo/Avery-Dennsion-Logo.webp"
+                      src={`${import.meta.env.BASE_URL}images/icons&logo/Avery-Dennsion-Logo.webp`}
                       alt="Avery Dennison Films Logo"
                       className="h-16 mx-auto mb-6"
                     />
