@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Card = ({ 
   children, 
   className = '', 
@@ -5,6 +7,9 @@ const Card = ({
   padding = 'default',
   ...props 
 }) => {
+  const baseClasses = 'bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-200';
+  const hoverClasses = hover ? 'hover:shadow-xl hover:-translate-y-1' : '';
+  
   const paddingClasses = {
     none: '',
     sm: 'p-4',
@@ -13,8 +18,7 @@ const Card = ({
     xl: 'p-10',
   };
   
-  const hoverClasses = hover ? 'hover:shadow-lg hover:-translate-y-1 transition-all duration-200' : '';
-  const classes = `bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 ${paddingClasses[padding]} ${hoverClasses} ${className}`;
+  const classes = `${baseClasses} ${hoverClasses} ${paddingClasses[padding]} ${className}`;
   
   return (
     <div className={classes} {...props}>
