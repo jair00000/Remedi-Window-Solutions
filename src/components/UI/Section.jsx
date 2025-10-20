@@ -1,57 +1,35 @@
-import React from 'react';
 import Container from './Container';
 
 const Section = ({ 
   children, 
   className = '', 
-  variant = 'default',
-  padding = 'md',
+  padding = 'default',
   background = 'white',
-  container = true,
-  containerSize = 'md',
   ...props 
 }) => {
-  // Base section classes
-  const baseClasses = '';
-  
-  // Variant classes
-  const variantClasses = {
-    default: '',
-    hero: 'hero-section',
-    content: 'section-content',
-    features: 'section-features'
-  };
-  
-  // Padding classes
   const paddingClasses = {
-    none: 'section-padding-none',
-    sm: 'section-padding-sm',
-    md: 'section-padding-md',
-    lg: 'section-padding-lg',
-    xl: 'section-padding-xl'
+    none: '',
+    sm: 'py-8 md:py-12',
+    default: 'py-16 md:py-24',
+    lg: 'py-20 md:py-32',
+    xl: 'py-24 md:py-40',
   };
   
-  // Background classes
   const backgroundClasses = {
-    white: 'section-bg-white',
-    gray: 'section-bg-gray',
-    primary: 'section-bg-primary',
-    secondary: 'section-bg-secondary',
-    gradient: 'section-bg-gradient'
+    white: 'bg-white dark:bg-gray-900',
+    gray: 'bg-gray-50 dark:bg-gray-800',
+    primary: 'bg-primary-600 dark:bg-primary-700',
+    secondary: 'bg-secondary-900 dark:bg-secondary-800',
+    gradient: 'bg-gradient-to-br from-primary-600 to-primary-800 dark:from-primary-700 dark:to-primary-900',
   };
   
-  // Combine all classes
-  const classes = `${baseClasses} ${variantClasses[variant]} ${paddingClasses[padding]} ${backgroundClasses[background]} ${className}`;
-  
-  const content = container ? (
-    <Container size={containerSize}>
-      {children}
-    </Container>
-  ) : children;
+  const classes = `${paddingClasses[padding]} ${backgroundClasses[background]} ${className}`;
   
   return (
     <section className={classes} {...props}>
-      {content}
+      <Container>
+        {children}
+      </Container>
     </section>
   );
 };

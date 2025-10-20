@@ -1,39 +1,20 @@
-import React from 'react';
-
 const Card = ({ 
   children, 
   className = '', 
-  variant = 'default',
   hover = false,
-  padding = 'md',
+  padding = 'default',
   ...props 
 }) => {
-  // Base card classes
-  const baseClasses = 'card';
-  
-  // Variant classes
-  const variantClasses = {
-    default: '',
-    service: 'card-service',
-    feature: 'card-feature',
-    project: 'card-project',
-    dark: 'card-dark'
-  };
-  
-  // Hover classes
-  const hoverClasses = hover ? 'card-hover' : '';
-  
-  // Padding classes
   const paddingClasses = {
-    none: 'card-padding-none',
-    sm: 'card-padding-sm',
-    md: 'card-padding-md',
-    lg: 'card-padding-lg',
-    xl: 'card-padding-xl'
+    none: '',
+    sm: 'p-4',
+    default: 'p-6',
+    lg: 'p-8',
+    xl: 'p-10',
   };
   
-  // Combine all classes
-  const classes = `${baseClasses} ${variantClasses[variant]} ${hoverClasses} ${paddingClasses[padding]} ${className}`;
+  const hoverClasses = hover ? 'hover:shadow-lg hover:-translate-y-1 transition-all duration-200' : '';
+  const classes = `bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 ${paddingClasses[padding]} ${hoverClasses} ${className}`;
   
   return (
     <div className={classes} {...props}>

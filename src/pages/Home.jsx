@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-section h-[70vh]">
+      <section className="relative h-[70vh] overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -68,20 +68,21 @@ const Home = () => {
             backgroundPosition: 'center right'
           }}
         ></div>
-        <div className="hero-overlay"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         
-        <Container size="md" className="container-hero">
+        <Container className="relative z-10 text-center text-white flex items-center justify-center h-full px-4 sm:px-6 pt-20">
           <div className="max-w-4xl mx-auto">
-            <h1 className="heading-hero-main animate-fade-in">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 animate-fade-in leading-tight">
               <span className="text-primary-500 block xs:inline">NORTH MISSISSIPPI'S</span>
               <span className="block text-white mt-1 xs:mt-0 xs:ml-2">WINDOW TINTING EXPERTS</span>
             </h1>
-            <p className="text-hero-subtitle animate-slide-up">
+            <p className="text-sm md:text-base mb-8 text-white animate-slide-up max-w-3xl mx-auto leading-relaxed px-2">
               Remedi Window Solutions provides professional window tinting services for residential, commercial, and institutional clients across Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
             </p>
-            <div className="flex-center mobile-flex animate-slide-up">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up px-4">
               <Button 
-                variant="cta"
+                size="lg" 
+                className="bg-primary-500 hover:bg-primary-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
                 onClick={() => navigate('/contact')}
               >
                 FREE QUOTATION
@@ -92,10 +93,10 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <Section id="services-section" variant="content" padding="lg">
-        <div className="flex-start mobile-flex mb-12 sm:mb-16">
+      <Section id="services-section" className="services-section bg-white dark:bg-gray-900 transition-colors duration-300 py-12 sm:py-16 lg:py-20">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 sm:gap-8 lg:gap-16 mb-12 sm:mb-16 px-4 sm:px-6 lg:px-8">
           <div className="flex-shrink-0 w-full lg:w-auto">
-            <h2 className="heading-section-dark">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-gray-900 dark:text-white leading-tight">
               <span className="block">EXPLORE</span>
               <span className="block">OUR SERVICES</span>
             </h2>
@@ -107,27 +108,27 @@ const Home = () => {
           </div>
         </div>
         
-        <div className="mobile-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-8">
           {services.map((service, index) => (
-            <Card key={index} variant="service" hover className="text-center overflow-hidden">
+            <Card key={index} hover className="text-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-900 dark:border-gray-100">
               <div className="h-40 sm:h-48 mb-3 sm:mb-4 overflow-hidden">
                 <img 
                   src={service.image} 
                   alt={service.title}
-                  className="w-full h-full object-cover hover-scale transition-smooth"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="card-padding-sm">
-                <h3 className="heading-card text-black dark:text-white">
+              <div className="p-3 sm:p-4">
+                <h3 className="text-lg sm:text-xl font-heading font-semibold text-black mb-2 sm:mb-3">
                   {service.title}
                 </h3>
-                <p className="text-card text-secondary">
+                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                   {service.description}
                 </p>
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="w-full mt-4"
+                  className="w-full border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-3"
                   onClick={() => navigate(service.link)}
                 >
                   Learn More
