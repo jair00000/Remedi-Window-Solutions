@@ -213,7 +213,7 @@ const TermsOfService = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/images/about/About-Hero-logo.webp')`,
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/about/About-Hero-logo.webp)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}

@@ -227,7 +227,7 @@ const Contact = () => {
           <div 
             className="flex-1 bg-cover bg-center bg-no-repeat relative"
             style={{
-              backgroundImage: `url('/images/contactUs/contact-hero1.webp')`,
+              backgroundImage: `url(${import.meta.env.BASE_URL}images/contactUs/contact-hero1.webp)`,
               clipPath: 'polygon(0 0, 40% 0, 25% 100%, 0% 100%)'
             }}
           >
@@ -243,7 +243,7 @@ const Contact = () => {
           <div 
             className="flex-1 bg-cover bg-center bg-no-repeat relative"
             style={{
-              backgroundImage: `url('/images/contactUs/contact-hero2.webp')`,
+              backgroundImage: `url(${import.meta.env.BASE_URL}images/contactUs/contact-hero2.webp)`,
               clipPath: 'polygon(40% 0, 80% 0, 65% 100%, 25% 100%)'
             }}
           >
@@ -259,7 +259,7 @@ const Contact = () => {
           <div 
             className="flex-1 bg-cover bg-center bg-no-repeat relative"
             style={{
-              backgroundImage: `url('/images/contactUs/contact-hero3.webp')`,
+              backgroundImage: `url(${import.meta.env.BASE_URL}images/contactUs/contact-hero3.webp)`,
               clipPath: 'polygon(80% 0, 100% 0, 100% 100%, 65% 100%)'
             }}
           >

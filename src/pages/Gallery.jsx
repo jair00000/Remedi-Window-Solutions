@@ -48,7 +48,7 @@ const Gallery = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/images/gallery/hero-galery.webp')`,
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/gallery/hero-galery.webp)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -113,7 +113,7 @@ const Gallery = () => {
                 onClick={() => openModal(imageName)}
               >
                 <img 
-                  src={`/images/gallery/${imageName}`}
+                  src={`${import.meta.env.BASE_URL}images/gallery/${imageName}`}
                   alt={`Gallery project ${index + 1}`}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
@@ -179,7 +179,7 @@ const Gallery = () => {
               </svg>
             </button>
             <img 
-              src={`/images/gallery/${selectedImage}`}
+              src={`${import.meta.env.BASE_URL}images/gallery/${selectedImage}`}
               alt="Gallery project"
               className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}

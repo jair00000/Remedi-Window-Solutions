@@ -12,7 +12,7 @@ const Projects = () => {
       title: 'Residential Window Tinting',
       category: 'Residential',
       location: 'Starkville, MS',
-      image: '/images/home/home-projects1.webp',
+      image: `${import.meta.env.BASE_URL}images/home/home-projects1.webp`,
       description: 'Complete home window tinting with solar control films for enhanced privacy and energy efficiency.',
       features: ['Solar Control', 'UV Protection', 'Privacy Enhancement']
     },
@@ -21,7 +21,7 @@ const Projects = () => {
       title: 'Commercial Office Building',
       category: 'Commercial',
       location: 'Columbus, MS',
-      image: '/images/home/home-projects2.webp',
+      image: `${import.meta.env.BASE_URL}images/home/home-projects2.webp`,
       description: 'Large-scale commercial tinting project for improved employee comfort and energy savings.',
       features: ['Energy Efficiency', 'Employee Comfort', 'Professional Appearance']
     },
@@ -30,7 +30,7 @@ const Projects = () => {
       title: 'Government Facility',
       category: 'Government',
       location: 'Tupelo, MS',
-      image: '/images/home/home-projects3.webp',
+      image: `${import.meta.env.BASE_URL}images/home/home-projects3.webp`,
       description: 'Security and safety window films for government building with enhanced protection.',
       features: ['Security Films', 'Safety Compliance', 'Energy Savings']
     },
@@ -39,7 +39,7 @@ const Projects = () => {
       title: 'Educational Institution',
       category: 'Institutional',
       location: 'Oxford, MS',
-      image: '/images/home/home-projects4.webp',
+      image: `${import.meta.env.BASE_URL}images/home/home-projects4.webp`,
       description: 'Window tinting for school building focusing on student safety and comfort.',
       features: ['Safety Films', 'UV Protection', 'Comfort Enhancement']
     },
@@ -48,7 +48,7 @@ const Projects = () => {
       title: 'Modern Residence',
       category: 'Residential',
       location: 'Tuscaloosa, AL',
-      image: '/images/gallery/IMG_2625.webp',
+      image: `${import.meta.env.BASE_URL}images/gallery/IMG_2625.webp`,
       description: 'Contemporary home with decorative and functional window films.',
       features: ['Decorative Films', 'Privacy', 'Solar Control']
     },
@@ -57,7 +57,7 @@ const Projects = () => {
       title: 'Retail Storefront',
       category: 'Commercial',
       location: 'Starkville, MS',
-      image: '/images/gallery/IMG_2626.webp',
+      image: `${import.meta.env.BASE_URL}images/gallery/IMG_2626.webp`,
       description: 'Storefront tinting for improved customer experience and energy efficiency.',
       features: ['Customer Comfort', 'Energy Savings', 'Brand Protection']
     }
@@ -79,7 +79,7 @@ const Projects = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/home/home-projects1.webp)',
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/home/home-projects1.webp)`,
             backgroundPosition: 'center'
           }}
         ></div>

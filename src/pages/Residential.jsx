@@ -24,7 +24,7 @@ const Residential = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/images/residential-solutions/hero-residential.webp')`,
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/residential-solutions/hero-residential.webp)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}

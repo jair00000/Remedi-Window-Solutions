@@ -24,7 +24,7 @@ const Commercial = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/images/commercial-solutions/hero-commercial.webp')`,
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/commercial-solutions/hero-commercial.webp)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
