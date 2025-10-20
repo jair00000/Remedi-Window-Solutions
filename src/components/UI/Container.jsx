@@ -3,17 +3,20 @@ import React from 'react';
 const Container = ({ 
   children, 
   className = '', 
-  size = 'default',
+  size = 'md',
   ...props 
 }) => {
+  // Size classes
   const sizeClasses = {
-    sm: 'max-w-4xl',
-    default: 'max-w-7xl',
-    lg: 'max-w-8xl',
-    full: 'max-w-none',
+    sm: 'container-sm',
+    md: 'container-md',
+    lg: 'container-lg',
+    full: 'container-full',
+    responsive: 'container-responsive'
   };
   
-  const classes = `${sizeClasses[size]} mx-auto px-4 sm:px-6 lg:px-8 ${className}`;
+  // Combine all classes
+  const classes = `${sizeClasses[size]} ${className}`;
   
   return (
     <div className={classes} {...props}>

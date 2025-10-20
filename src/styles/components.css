@@ -1,0 +1,342 @@
+/* ========================================
+   COMPONENT STYLES - Reusable UI Components
+   ======================================== */
+
+/* ===== BUTTONS ===== */
+@layer components {
+  /* Base Button Styles */
+  .btn {
+    @apply inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Button Variants */
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-800 focus:ring-secondary-500;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-500;
+  }
+
+  .btn-ghost {
+    @apply text-primary-600 hover:bg-primary-50 focus:ring-primary-500;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white focus:ring-red-500;
+  }
+
+  .btn-success {
+    @apply bg-green-600 hover:bg-green-700 text-white focus:ring-green-500;
+  }
+
+  /* Button Sizes */
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn-md {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
+  }
+
+  .btn-xl {
+    @apply px-10 py-5 text-xl;
+  }
+
+  /* CTA Buttons */
+  .btn-cta {
+    @apply bg-primary-500 hover:bg-primary-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto;
+  }
+
+  .btn-cta-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary-600 border-2 border-primary-600 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto;
+  }
+}
+
+/* ===== CARDS ===== */
+@layer components {
+  /* Base Card Styles */
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .card-dark {
+    @apply bg-gray-800 text-white border-gray-700;
+  }
+
+  /* Card Padding Variants */
+  .card-padding-none {
+    @apply p-0;
+  }
+
+  .card-padding-sm {
+    @apply p-4;
+  }
+
+  .card-padding-md {
+    @apply p-6;
+  }
+
+  .card-padding-lg {
+    @apply p-8;
+  }
+
+  .card-padding-xl {
+    @apply p-10;
+  }
+
+  /* Service Cards */
+  .card-service {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  .card-feature {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 p-6 text-center transition-all duration-300 hover:shadow-lg;
+  }
+
+  /* Project Cards */
+  .card-project {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
+
+/* ===== LAYOUT COMPONENTS ===== */
+@layer components {
+  /* Container Sizes */
+  .container-sm {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-md {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-lg {
+    @apply max-w-8xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-full {
+    @apply max-w-none mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section Padding */
+  .section-padding-none {
+    @apply py-0;
+  }
+
+  .section-padding-sm {
+    @apply py-8 md:py-12;
+  }
+
+  .section-padding-md {
+    @apply py-16 md:py-24;
+  }
+
+  .section-padding-lg {
+    @apply py-20 md:py-32;
+  }
+
+  .section-padding-xl {
+    @apply py-24 md:py-40;
+  }
+
+  /* Section Backgrounds */
+  .section-bg-white {
+    @apply bg-white dark:bg-gray-900;
+  }
+
+  .section-bg-gray {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
+
+  .section-bg-primary {
+    @apply bg-primary-600 dark:bg-primary-700;
+  }
+
+  .section-bg-secondary {
+    @apply bg-secondary-900 dark:bg-secondary-800;
+  }
+
+  .section-bg-gradient {
+    @apply bg-gradient-to-br from-primary-600 to-primary-800 dark:from-primary-700 dark:to-primary-900;
+  }
+
+  /* Hero Sections */
+  .hero-section {
+    @apply relative overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-center text-white flex items-center justify-center h-full px-4 sm:px-6 pt-20;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-black/60;
+  }
+}
+
+/* ===== TYPOGRAPHY ===== */
+@layer components {
+  /* Headings */
+  .heading-hero {
+    @apply text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 leading-tight;
+  }
+
+  .heading-section {
+    @apply text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-heading font-bold leading-tight;
+  }
+
+  .heading-card {
+    @apply text-xl md:text-2xl font-heading font-semibold mb-3;
+  }
+
+  .heading-small {
+    @apply text-lg md:text-xl font-heading font-semibold mb-2;
+  }
+
+  /* Text Styles */
+  .text-hero {
+    @apply text-sm md:text-base mb-8 leading-relaxed;
+  }
+
+  .text-section {
+    @apply text-base md:text-lg mb-6 leading-relaxed;
+  }
+
+  .text-card {
+    @apply text-sm md:text-base mb-4 leading-relaxed;
+  }
+
+  /* Text Colors */
+  .text-primary {
+    @apply text-primary-600 dark:text-primary-400;
+  }
+
+  .text-secondary {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+
+  .text-muted {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+  }
+}
+
+/* ===== FORM COMPONENTS ===== */
+@layer components {
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors duration-200;
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors duration-200 resize-vertical;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2;
+  }
+
+  .form-error {
+    @apply text-red-600 dark:text-red-400 text-sm mt-1;
+  }
+}
+
+/* ===== NAVIGATION ===== */
+@layer components {
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-primary-600 dark:text-primary-400 font-semibold;
+  }
+
+  .mobile-menu {
+    @apply fixed inset-0 z-50 bg-white dark:bg-gray-900 lg:hidden;
+  }
+}
+
+/* ===== FOOTER ===== */
+@layer components {
+  .footer-section {
+    @apply bg-secondary-900 text-white;
+  }
+
+  .footer-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-200;
+  }
+
+  .footer-heading {
+    @apply text-lg font-semibold mb-4 text-white;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@layer components {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.5s ease-out;
+  }
+
+  .animate-slide-left {
+    animation: slideLeft 0.5s ease-out;
+  }
+
+  .animate-slide-right {
+    animation: slideRight 0.5s ease-out;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s infinite;
+  }
+}
+
+/* ===== UTILITY COMPONENTS ===== */
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/10 border border-white/20;
+  }
+
+  .diagonal-cut {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .diagonal-cut-reverse {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .shadow-custom {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .shadow-custom-lg {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+}
