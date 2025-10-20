@@ -13,7 +13,7 @@ const Home = () => {
     {
       title: 'Residential Solutions',
       description: 'Your home deserves the best protection from heat, glare, and harmful UV rays.',
-      image: '/images/home/home-services-resdiential.webp',
+      image: './images/home/home-services-resdiential.webp',
       features: ['Energy Efficiency', 'UV Protection', 'Privacy Enhancement'],
       link: '/residential'
     },
