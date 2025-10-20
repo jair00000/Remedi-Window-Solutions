@@ -13,21 +13,21 @@ const Home = () => {
     {
       title: 'Residential Solutions',
       description: 'Your home deserves the best protection from heat, glare, and harmful UV rays.',
-      image: './images/home/home-services-resdiential.webp',
+      image: '/Remedi-Window-Solutions/images/home/home-services-resdiential.webp',
       features: ['Energy Efficiency', 'UV Protection', 'Privacy Enhancement'],
       link: '/residential'
     },
     {
       title: 'Commercial Solutions',
       description: 'A productive business environment starts with comfort and efficiency.',
-      image: '/images/home/home-services-commercial.webp',
+      image: '/Remedi-Window-Solutions/images/home/home-services-commercial.webp',
       features: ['Professional Results', 'Cost Savings', 'Enhanced Security'],
       link: '/commercial'
     },
     {
       title: 'Government & Schools Solutions',
       description: 'Safety, comfort, and efficiency are essential for public buildings.',
-      image: '/images/home/home-services-government&schools.webp',
+      image: '/Remedi-Window-Solutions/images/home/home-services-government&schools.webp',
       features: ['Safety & Security', 'Compliance', 'Long-term Performance'],
       link: '/institutional'
     }
@@ -64,7 +64,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/home/hero-home.webp)',
+            backgroundImage: 'url(/Remedi-Window-Solutions/images/home/hero-home.webp)',
             backgroundPosition: 'center right'
           }}
         ></div>
@@ -143,7 +143,7 @@ const Home = () => {
       <div className="relative min-h-[500px] sm:min-h-[600px] overflow-hidden w-full bg-white dark:bg-gray-900 transition-colors duration-300">
           {/* Full Width Background Image */}
           <img 
-            src="/images/home/home-about-section.webp" 
+            src="/Remedi-Window-Solutions/images/home/home-about-section.webp" 
             alt="About Remedi Window Solutions"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -204,7 +204,7 @@ const Home = () => {
           {/* Project 1 - Large */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 sm:col-span-2 lg:col-span-1 lg:row-span-2">
             <img 
-              src="/images/home/home-projects1.webp" 
+              src="/Remedi-Window-Solutions/images/home/home-projects1.webp" 
               alt="Security Window Film Installation & Anchoring1"
               className="w-full h-48 sm:h-64 md:h-80 lg:h-full object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -218,7 +218,7 @@ const Home = () => {
           {/* Project 2 - Medium */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <img 
-              src="/images/home/home-projects2.webp" 
+              src="/Remedi-Window-Solutions/images/home/home-projects2.webp" 
               alt="Security Window Film Installation & Anchoring2"
               className="w-full h-48 sm:h-64 object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -232,7 +232,7 @@ const Home = () => {
           {/* Project 3 - Medium */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <img 
-              src="/images/home/home-projects3.webp" 
+              src="/Remedi-Window-Solutions/images/home/home-projects3.webp" 
               alt="Security Window Film Installation & Anchoring3"
               className="w-full h-48 sm:h-64 object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -246,7 +246,7 @@ const Home = () => {
           {/* Project 4 - Wide */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 sm:col-span-2">
             <img 
-              src="/images/home/home-projects4.webp" 
+              src="/Remedi-Window-Solutions/images/home/home-projects4.webp" 
               alt="Security Window Film Installation & Anchoring4"
               className="w-full h-48 sm:h-64 object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -328,7 +328,7 @@ const Home = () => {
       <div className="relative min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] overflow-hidden w-full">
         {/* Full Width Background Image */}
         <img 
-          src="/images/home/Mississippi-map.webp" 
+          src="/Remedi-Window-Solutions/images/home/Mississippi-map.webp" 
           alt="Mississippi and Alabama Service Areas Map"
           className="absolute inset-0 w-full h-full object-cover"
         />
