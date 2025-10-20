@@ -2,7 +2,7 @@
   "name": "remedi-window-solution",
   "version": "1.0.0",
   "description": "Remedi Window Solution - Professional window installation and repair services",
-  "homepage": "https://jair00000.github.io/Remedi-Window-Solutions",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.2.0",
