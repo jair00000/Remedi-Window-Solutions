@@ -90,7 +90,7 @@ const Footer = () => {
               <div className="mb-8">
                 <div className="flex items-start mb-4">
                   <img 
-                    src="/Remedi-Window-Solutions/images/icons&logo/remedi-logo.svg" 
+                    src="/images/icons&logo/remedi-logo.svg" 
                     alt="Remedi Window Solutions Logo" 
                     className="w-20 h-20 object-contain mr-4 -mt-6 filter brightness-0 invert"
                   />
