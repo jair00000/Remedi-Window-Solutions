@@ -1,6 +1,7 @@
 import React from 'react';
 import { BoltIcon, SunIcon, SparklesIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Section from '../components/UI/Section';
 import Container from '../components/UI/Container';
 import Button from '../components/UI/Button';
@@ -12,21 +13,21 @@ const Home = () => {
   const services = [
     {
       title: 'Residential Solutions',
-      description: 'Your home deserves the best protection from heat, glare, and harmful UV rays.',
-      image: `${import.meta.env.BASE_URL}images/home/home-services-resdiential.webp`,
+      description: 'Our residential window tinting services protect your home from heat, glare, and harmful UV rays while improving comfort and energy efficiency across North Mississippi and West Alabama.',
+      image: `${import.meta.env.BASE_URL}images/home/home-services-residential.webp`,
       features: ['Energy Efficiency', 'UV Protection', 'Privacy Enhancement'],
       link: '/residential'
     },
     {
       title: 'Commercial Solutions',
-      description: 'A productive business environment starts with comfort and efficiency.',
+      description: 'Our commercial window tinting helps businesses in Starkville, Columbus, Oxford, and Tupelo reduce glare, cut cooling costs, and create a more comfortable workspace.',
       image: `${import.meta.env.BASE_URL}images/home/home-services-commercial.webp`,
       features: ['Professional Results', 'Cost Savings', 'Enhanced Security'],
       link: '/commercial'
     },
     {
-      title: 'Government & Schools Solutions',
-      description: 'Safety, comfort, and efficiency are essential for public buildings.',
+      title: 'Government & Schools',
+      description: 'We install security and solar control window films for schools and government facilities across North Mississippi and West Alabama, ensuring safety, comfort, and energy savings year-round.',
       image: `${import.meta.env.BASE_URL}images/home/home-services-government&schools.webp`,
       features: ['Safety & Security', 'Compliance', 'Long-term Performance'],
       link: '/institutional'
@@ -58,8 +59,34 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Window Tinting in North Mississippi and West Alabama | Remedi Window Solutions</title>
+        <meta
+          name="description"
+          content="Remedi Window Solutions is a locally owned window tinting company located in Vardaman, Mississippi, serving North Mississippi and West Alabama. We provide professional window film installation for homes, offices, and institutions, offering long-lasting comfort and protection with high-performance window films."
+        />
+        <meta
+          name="keywords"
+          content="window tinting, window film installation, residential window tinting, commercial window tinting, security window films, solar control films, North Mississippi, West Alabama, Vardaman MS, Starkville, Columbus, Oxford, Tupelo, Tuscaloosa"
+        />
+        {/* --- Open Graph (for Facebook, Instagram, LinkedIn, Messenger) --- */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Window Tinting in North Mississippi and West Alabama | Remedi Window Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Professional window tinting for homes, offices, and institutions across North Mississippi and West Alabama. Located in Vardaman, MS."
+        />
+        <meta property="og:url" content="https://jair00000.github.io/Remedi-Window-Solutions/" />
+        <meta property="og:site_name" content="Remedi Window Solutions" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+      </Helmet>
+      
       {/* Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
+      <section className="relative h-[100vh] sm:h-[70vh] overflow-hidden bg-white dark:bg-gray-900 transition-colors duration-300">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -70,23 +97,46 @@ const Home = () => {
         ></div>
         <div className="absolute inset-0 bg-black/60"></div>
         
-        <Container className="relative z-10 text-center text-white flex items-center justify-center h-full px-4 sm:px-6 pt-20">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 animate-fade-in leading-tight">
-              <span className="text-primary-500 block xs:inline">NORTH MISSISSIPPI'S</span>
-              <span className="block text-white mt-1 xs:mt-0 xs:ml-2">WINDOW TINTING EXPERTS</span>
-            </h1>
-            <p className="text-sm md:text-base mb-8 text-white animate-slide-up max-w-3xl mx-auto leading-relaxed px-2">
-              Remedi Window Solutions provides professional window tinting services for residential, commercial, and institutional clients across Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up px-4">
-              <Button 
-                size="lg" 
-                className="bg-primary-500 hover:bg-primary-600 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
-                onClick={() => navigate('/contact')}
-              >
-                FREE QUOTATION
-              </Button>
+        <Container className="relative z-10 text-white flex items-center justify-center h-full px-4 sm:px-6 pt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto w-full">
+            {/* Left Column - H1 and Subtext */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 animate-fade-in leading-tight">
+                North Mississippi's Window Tinting Installer
+              </h1>
+              <p className="text-sm md:text-base mb-6 text-white animate-slide-up leading-relaxed">
+                Remedi Window Solutions provides professional window tinting services for residential, commercial, and institutional clients across Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
+              </p>
+              <div className="animate-slide-up">
+                <Button 
+                  size="lg" 
+                  className="bg-primary-500 hover:bg-primary-600 text-white text-sm sm:text-lg px-4 sm:px-8 py-2 sm:py-4 w-full sm:w-auto"
+                  onClick={() => navigate('/contact')}
+                >
+                  Free Quotation
+                </Button>
+              </div>
+            </div>
+
+            {/* Right Column - Tagline with Tint Card */}
+            <div className="flex items-center justify-center lg:justify-end">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 max-w-md">
+                <div className="text-center">
+                  <h3 className="text-lg md:text-xl font-semibold mb-3 text-white">
+                    Service Areas
+                  </h3>
+                  <p className="text-xs md:text-sm text-white/90 leading-relaxed mb-4">
+                    Professional window tinting across Starkville, Columbus, Oxford, Tupelo, and Tuscaloosa in North Mississippi and West Alabama.
+                  </p>
+                  <div className="grid grid-cols-2 gap-1 sm:gap-2 text-xs text-white/80">
+                    <div className="bg-white/5 rounded px-1 sm:px-2 py-1 text-xs">Starkville</div>
+                    <div className="bg-white/5 rounded px-1 sm:px-2 py-1 text-xs">Columbus</div>
+                    <div className="bg-white/5 rounded px-1 sm:px-2 py-1 text-xs">Oxford</div>
+                    <div className="bg-white/5 rounded px-1 sm:px-2 py-1 text-xs">Tupelo</div>
+                    <div className="bg-white/5 rounded px-1 sm:px-2 py-1 col-span-2 text-xs">Tuscaloosa</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Container>
@@ -103,14 +153,14 @@ const Home = () => {
           </div>
           <div className="flex-1 w-full">
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              At Remedi, we don't just tint windows — we transform environments. Our mission is to create spaces that feel cooler, safer, and more efficient, using the industry's most advanced films and installation techniques.
+              At Remedi Window Solutions, we don't just offer window tinting. We transform homes, offices, and public buildings across North Mississippi and West Alabama. Our mission is to deliver professional window film installation that makes every space cooler, safer, and more energy-efficient using the industry's most durable and high-performance films designed to provide long-lasting comfort and protection.
             </p>
           </div>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-8">
           {services.map((service, index) => (
-            <Card key={index} hover className="text-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-900 dark:border-gray-100">
+            <Card key={index} hover className="text-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-900 dark:border-gray-100 flex flex-col h-full">
               <div className="h-40 sm:h-48 mb-3 sm:mb-4 overflow-hidden">
                 <img 
                   src={service.image} 
@@ -118,17 +168,17 @@ const Home = () => {
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <div className="p-3 sm:p-4">
+              <div className="p-3 sm:p-4 flex flex-col flex-grow">
                 <h3 className="text-lg sm:text-xl font-heading font-semibold text-black mb-2 sm:mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
+                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed flex-grow">
                   {service.description}
                 </p>
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="w-full border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-3"
+                  className="w-full border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-3 mt-auto"
                   onClick={() => navigate(service.link)}
                 >
                   Learn More
@@ -163,7 +213,7 @@ const Home = () => {
                   Transforming Glass into Comfort and Efficiency
                 </p>
                 <p className="text-xs sm:text-sm lg:text-base text-gray-300 mb-6 sm:mb-8 leading-relaxed">
-                  Remedi is a locally owned window tint company serving North Mississippi. We help homeowners, businesses, and institutions enhance comfort, security, and energy efficiency with high-performance window films. Our skilled team combines local expertise with cutting-edge technology - ensuring every installation is flawless, durable, and beautiful.
+                Remedi Window Solutions is a locally owned window tinting company located in Vardaman, Mississippi, serving North Mississippi and West Alabama. We help homeowners, businesses, and institutions enhance comfort, security, and energy efficiency with high-performance window films. Our skilled team combines local expertise with advanced installation technology to ensure every project delivers lasting quality, visual clarity, and long-term comfort and protection.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Button 
@@ -204,7 +254,7 @@ const Home = () => {
           {/* Project 1 - Large */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 sm:col-span-2 lg:col-span-1 lg:row-span-2">
             <img 
-              src={`${import.meta.env.BASE_URL}images/home/home-projects1.webp`} 
+              src={`${import.meta.env.BASE_URL}images/projects/calhoun-county-school-window-tinting-calhoun-city-ms1.webp`} 
               alt="Security Window Film Installation & Anchoring1"
               className="w-full h-48 sm:h-64 md:h-80 lg:h-full object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -218,7 +268,7 @@ const Home = () => {
           {/* Project 2 - Medium */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <img 
-              src={`${import.meta.env.BASE_URL}images/home/home-projects2.webp`} 
+              src={`${import.meta.env.BASE_URL}images/projects/calhoun-county-school-window-tinting-calhoun-city-ms2.webp`} 
               alt="Security Window Film Installation & Anchoring2"
               className="w-full h-48 sm:h-64 object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -232,7 +282,7 @@ const Home = () => {
           {/* Project 3 - Medium */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <img 
-              src={`${import.meta.env.BASE_URL}images/home/home-projects3.webp`} 
+              src={`${import.meta.env.BASE_URL}images/projects/chickasaw-county-school-window-tinting-vardaman-ms1.webp`} 
               alt="Security Window Film Installation & Anchoring3"
               className="w-full h-48 sm:h-64 object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"
@@ -246,7 +296,7 @@ const Home = () => {
           {/* Project 4 - Wide */}
           <div className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 sm:col-span-2">
             <img 
-              src={`${import.meta.env.BASE_URL}images/home/home-projects4.webp`} 
+              src={`${import.meta.env.BASE_URL}images/projects/chickasaw-county-school-window-tinting-vardaman-ms2.webp`} 
               alt="Security Window Film Installation & Anchoring4"
               className="w-full h-48 sm:h-64 object-cover brightness-50 group-hover:brightness-100 group-hover:scale-105 transition-all duration-300"
               loading="lazy"

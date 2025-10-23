@@ -55,7 +55,7 @@ const TermsOfService = () => {
           subtitle: "Payment Terms",
           details: [
             "Payment is due upon completion of services unless other arrangements are made",
-            "We accept cash, check, and major credit cards",
+            "We accept cash and check",
             "Commercial accounts may be eligible for net payment terms",
             "Late payment fees may apply to overdue accounts"
           ]

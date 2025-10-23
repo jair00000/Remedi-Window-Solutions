@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Section from '../components/UI/Section';
 import Button from '../components/UI/Button';
 import { CheckCircleIcon, StarIcon, ShieldCheckIcon, MapPinIcon, MapIcon, HeartIcon, ClockIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
@@ -38,6 +39,31 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About Remedi Window Solutions | Window Tinting in North Mississippi and West Alabama</title>
+        <meta
+          name="description"
+          content="Learn about Remedi Window Solutions, a trusted window tinting company and window film installer based in Vardaman, Mississippi. We specialize in residential, commercial, and institutional window tinting using Avery Dennison Window Films for comfort, security, and energy efficiency across North Mississippi and West Alabama."
+        />
+        <meta
+          name="keywords"
+          content="about Remedi Window Solutions, window tinting company, window film installer, Avery Dennison Window Films, residential window tinting, commercial window tinting, security films, solar control films, decorative window films, energy efficient window solutions, Vardaman Mississippi, North Mississippi, West Alabama, Starkville, Columbus, Oxford, Tupelo, Tuscaloosa"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="About Remedi Window Solutions | Window Tinting in North Mississippi and West Alabama"
+        />
+        <meta
+          property="og:description"
+          content="Remedi Window Solutions is a locally owned window tinting company and certified installer of Avery Dennison Window Films. Serving North Mississippi and West Alabama with professional window film installations for homes, businesses, and institutions."
+        />
+        <meta property="og:url" content="https://jair00000.github.io/Remedi-Window-Solutions/about" />
+        <meta property="og:site_name" content="Remedi Window Solutions" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+      </Helmet>
+      
       {/* Hero Section */}
       <div className="relative min-h-[100vh] overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
         {/* Background Image */}
@@ -58,17 +84,17 @@ const About = () => {
             {/* Left Content */}
             <div className="text-white space-y-6 sm:space-y-8 text-center lg:text-left">
               <div className="space-y-4 sm:space-y-6">
-                <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-heading font-bold leading-tight">
-                  About <span className="text-primary-400">Remedi</span>
+                <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-heading font-bold leading-tight animate-fade-in">
+                  About <span className="text-primary-400">Remedi</span> Window Solutions
                 </h1>
-                <h2 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold text-primary-300">
-                  Professional Window Tinting Services
+                <h2 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold text-primary-300 animate-slide-up">
+                  Professional Window Film Installation and Tinting Services
                 </h2>
-                <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  Enhancing comfort, safety, and energy efficiency through professional window tinting services for homes, businesses, and institutions across Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
+                <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slide-up">
+                  Remedi Window Solutions is a locally owned window film installer and window tinting company based in Vardaman, Mississippi, serving North Mississippi and West Alabama. We provide residential and commercial window tinting that enhances comfort, safety, and energy efficiency using Avery Dennison Window Films — known for their performance, durability, and clarity.
                 </p>
-                <p className="text-xs sm:text-sm lg:text-base xl:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  We deliver lasting protection and performance with Avery Dennison's best-quality window films, designed for solar control, privacy, security, and decorative applications. Experience clarity, comfort, and craftsmanship from a team built on trust and professionalism.
+                <p className="text-xs sm:text-sm lg:text-base text-gray-200 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-slide-up">
+                  Our high-performance window films are designed for solar control, privacy, security, and decorative applications. Every installation reflects our commitment to precision, professionalism, and long-lasting protection for your home or business.
                 </p>
               </div>
               
@@ -120,7 +146,7 @@ const About = () => {
                     </h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    Using trusted Avery Dennison materials
+                    Using trusted Avery Dennison Window Film materials
                   </p>
                 </div>
 
@@ -150,7 +176,7 @@ const About = () => {
                     </h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    Proudly serving North Mississippi and Tuscaloosa
+                    Serving North Mississippi and West Alabama
                   </p>
                 </div>
               </div>
@@ -171,11 +197,11 @@ const About = () => {
           
           <div className="space-y-8 text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-              Remedi Window Solutions is a trusted provider of professional window tinting services across <span className="font-semibold text-primary-600 dark:text-primary-400">Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa</span>. We specialize in residential, commercial, and institutional window film installations designed to enhance comfort, energy efficiency, and privacy, while maintaining a high standard of aesthetic excellence.
+              Remedi Window Solutions is a locally owned window tinting company and trusted window film installer serving <span className="font-semibold text-primary-600 dark:text-primary-400">North Mississippi and West Alabama</span>, with projects across <span className="font-semibold text-primary-600 dark:text-primary-400">Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa</span>. We specialize in residential, commercial, and institutional window tinting designed to enhance comfort, energy efficiency, and privacy while maintaining a high standard of aesthetic quality and precision.
               </p>
             
               <p>
-              We use <span className="font-semibold text-primary-600 dark:text-primary-400">Avery Dennison window films</span>, recognized for their quality, durability, and reliable performance. Our selection includes <span className="font-semibold text-gray-900 dark:text-white">Solar Control Films</span>, <span className="font-semibold text-gray-900 dark:text-white">Security Films</span>, <span className="font-semibold text-gray-900 dark:text-white">Privacy Films</span>, and <span className="font-semibold text-gray-900 dark:text-white">Decorative Films</span>, each designed to meet specific performance and aesthetic needs. These films allow us to deliver long-lasting protection, comfort, and visual enhancement for residential, commercial, and institutional properties across North Mississippi.
+              As an <span className="font-semibold text-primary-600 dark:text-primary-400">Avery Dennison Window Films provider</span>, we use premium films known for their quality, durability, and reliable performance. Our product range includes <span className="font-semibold text-gray-900 dark:text-white">Solar Control Films</span>, <span className="font-semibold text-gray-900 dark:text-white">Security Films</span>, <span className="font-semibold text-gray-900 dark:text-white">Privacy Films</span>, and <span className="font-semibold text-gray-900 dark:text-white">Decorative Window Films</span>, each engineered to deliver superior performance for heat rejection, safety, and design flexibility. These high-performance window films allow us to provide long-lasting comfort, protection, and visual enhancement for homes, offices, and institutional properties throughout North Mississippi and West Alabama.
               </p>
             </div>
           
@@ -208,7 +234,10 @@ const About = () => {
                 </h3>
               </div>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                To deliver high-quality window tinting solutions that improve comfort, efficiency, and protection for homes, businesses, and institutions. Our work is built on trust, integrity, and craftsmanship that endures over time.
+                Our mission is to deliver high-quality window film installations and professional window tinting solutions that enhance comfort, energy efficiency, and protection for residential, commercial, and institutional properties across North Mississippi and West Alabama.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                We use Avery Dennison Window Films, trusted for their durability, clarity, and performance, to provide long-lasting comfort, safety, and aesthetic value. Every project we complete reflects our commitment to craftsmanship, integrity, and reliable results that endures over time.
               </p>
             </div>
 
@@ -226,7 +255,10 @@ const About = () => {
               </h3>
               </div>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                To be recognized as North Mississippi's most trusted name in window tinting, known for our commitment to innovation, customer satisfaction, and long-term relationships founded on professionalism and ethical service.
+                Our vision is to be recognized as North Mississippi's leading window tinting company and trusted window film installer, known for innovation, precision, and service excellence.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                We aim to build long-term relationships founded on professionalism, ethical service, and customer satisfaction, becoming the preferred choice for window tinting in North Mississippi and West Alabama.
               </p>
             </div>
           </div>
@@ -241,7 +273,7 @@ const About = () => {
               Our Core <span className="text-primary-600">Values</span>
           </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              The principles that guide everything we do and shape our commitment to excellence
+              The principles that define who we are as a window tinting company and guide our dedication to excellence in every window film installation across North Mississippi and West Alabama.
           </p>
         </div>
         
@@ -259,7 +291,7 @@ const About = () => {
               </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                We value transparency and honesty in every project, building lasting relationships through reliability and consistent results.
+                We value transparency and honesty in every project, ensuring each residential, commercial, and institutional window tinting service meets the highest standards. Our reliability and consistent results help us build lasting relationships with clients across North Mississippi and West Alabama.
               </p>
         </div>
 
@@ -276,7 +308,7 @@ const About = () => {
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Every installation is performed with care and precision, ensuring both product safety and client peace of mind.
+                Every Avery Dennison Window Film installation is handled with precision and care to ensure both product safety and client confidence. We follow strict professional practices to deliver dependable comfort and protection.
           </p>
         </div>
         
@@ -293,7 +325,7 @@ const About = () => {
               </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                From consultation to completion, our team maintains the highest standards of conduct, workmanship, and attention to detail.
+                From consultation to completion, our team of skilled window film installers maintains the highest level of workmanship and attention to detail. We approach every home, business, and institution with respect and professionalism that reflects our company standards.
               </p>
             </div>
 
@@ -310,7 +342,7 @@ const About = () => {
               </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                We take pride in every job we do. Our dedication to punctuality, responsibility, and respect defines who we are and how we serve.
+                Each installation represents our commitment to quality, responsibility, and consistency. These values define how we operate as a trusted window tinting company in North Mississippi and West Alabama, delivering results that meet performance expectations and endure over time.
               </p>
                   </div>
               </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Section from '../components/UI/Section';
 import Button from '../components/UI/Button';
 import Card from '../components/UI/Card';
@@ -18,6 +19,30 @@ const Commercial = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Commercial Window Tinting | Remedi Window Solutions in North Mississippi and West Alabama</title>
+        <meta
+          name="description"
+          content="Remedi Window Solutions provides professional commercial window tinting and building window film installations that improve energy efficiency, security, and employee comfort. Serving businesses across North Mississippi and West Alabama with premium Avery Dennison window films."
+        />
+        <meta
+          name="keywords"
+          content="commercial window tinting, office window tinting, building window film installation, Avery Dennison window films, energy saving window tint, decorative window films, security window films, reflective window films, privacy window films, solar control films, commercial glass film, North Mississippi, West Alabama, Starkville, Columbus, Tupelo, Oxford, Tuscaloosa"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Commercial Window Tinting | Remedi Window Solutions in North Mississippi and West Alabama"
+        />
+        <meta
+          property="og:description"
+          content="Enhance your business with professional commercial window tinting by Remedi Window Solutions. Improve energy efficiency, privacy, and safety with Avery Dennison window films across North Mississippi and West Alabama."
+        />
+        <meta property="og:url" content="https://remediwindowsolutions.com/commercial" />
+        <meta property="og:site_name" content="Remedi Window Solutions" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[70vh] flex items-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
         {/* Background Image */}
@@ -36,12 +61,11 @@ const Commercial = () => {
         <div className="relative z-10 w-full pt-20">
           <div className="container-custom">
             <div className="text-center">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 text-white">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 text-white animate-fade-in">
                 Commercial Window Solutions
               </h1>
-              <p className="text-sm md:text-base mb-8 text-white max-w-3xl mx-auto">
-                Enhance your business with professional window films that improve energy efficiency, 
-                security, and employee comfort while reducing operational costs.
+              <p className="text-sm md:text-base mb-8 text-white max-w-3xl mx-auto animate-slide-up">
+                Enhance your business with commercial window tinting that improves energy efficiency, security, and employee comfort while reducing operational costs. Our building window film installations provide long-lasting performance, professional appearance, and reliable protection for every workspace.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -90,8 +114,7 @@ const Commercial = () => {
               Commercial Window Film Solutions
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-              Discover our comprehensive range of commercial window films designed to enhance your business operations, 
-              reduce costs, and create a more comfortable and productive work environment.
+              The right window film can make a big difference in how a business operates. From improving workplace comfort to lowering utility expenses, our commercial window films are designed to support both performance and appearance. Browse our film options to discover solutions that help your business save energy, protect interiors, and maintain a professional image.
             </p>
           </div>
 
@@ -140,14 +163,20 @@ const Commercial = () => {
             {/* Energy Efficiency */}
             {activeTab === 'energy-efficiency' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
                     Energy Efficiency Solutions
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Reduce operational costs and improve building efficiency with our advanced solar control films. 
-                    Significant energy savings while maintaining professional appearance and natural light.
-                  </p>
+                  <Card className="p-6 mb-8">
+                    <div className="w-full">
+                      <p className="text-gray-600 mb-4">
+                        Enhance building performance and reduce operational costs with commercial window tinting that improves comfort, appearance, and sustainability. Our energy saving window films help control heat and glare while maintaining clear visibility and a professional look.
+                      </p>
+                      <p className="text-gray-600">
+                        These office window tinting solutions provide effective insulation for year-round energy savings and greater occupant comfort. Using advanced reflective and ceramic films, we ensure reliable performance, efficiency, and aesthetics for modern commercial spaces.
+                      </p>
+                    </div>
+                  </Card>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -156,13 +185,13 @@ const Commercial = () => {
                       Cost Savings
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Reduce HVAC costs by up to 40% while improving building energy efficiency ratings and sustainability.
+                      Lower energy use and operating expenses with durable energy saving films designed for performance.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Reduce cooling costs by 25-40%</li>
-                      <li>• Lower heating costs in winter months</li>
-                      <li>• Improve LEED certification scores</li>
-                      <li>• Qualify for energy efficiency rebates</li>
+                      <li>• Reduce cooling costs by 25 to 40 percent</li>
+                      <li>• Lower heating expenses during colder months</li>
+                      <li>• Improve building energy ratings and sustainability</li>
+                      <li>• Help qualify for energy efficiency rebate programs</li>
                     </ul>
                   </Card>
 
@@ -171,13 +200,13 @@ const Commercial = () => {
                       Performance Benefits
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Advanced films provide superior heat rejection while maintaining optimal light transmission for productivity.
+                      Achieve comfort and clarity with advanced building window film installation that balances light transmission and heat rejection.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Block up to 99% of UV radiation</li>
-                      <li>• Reduce solar heat gain by 60-80%</li>
-                      <li>• Maintain high visible light transmission</li>
-                      <li>• Long-term durability and performance</li>
+                      <li>• Blocks up to 99 percent of UV rays</li>
+                      <li>• Reduces solar heat gain by 60 to 80 percent</li>
+                      <li>• Maintains natural light and productivity levels</li>
+                      <li>• Delivers long-lasting durability and professional appearance</li>
                     </ul>
                   </Card>
                 </div>
@@ -197,14 +226,19 @@ const Commercial = () => {
                       <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Dual Reflective
                       </div>
-                      <p className="text-gray-600 text-sm">High performance with professional appearance</p>
+                      <p className="text-gray-600 text-sm">Balanced performance with clear visibility and reduced glare</p>
                     </div>
                     <div className="text-center">
                       <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Ceramic Films
                       </div>
-                      <p className="text-gray-600 text-sm">Premium performance with clear visibility</p>
+                      <p className="text-gray-600 text-sm">Premium heat control with a neutral, professional finish</p>
                     </div>
+                  </div>
+                  <div className="mt-6 text-center">
+                    <p className="text-gray-600 text-sm">
+                      All films are made with Avery Dennison's trusted materials, providing dependable quality and clarity for commercial glass film and building window tinting applications across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
+                    </p>
                   </div>
                 </Card>
               </div>
@@ -213,14 +247,20 @@ const Commercial = () => {
             {/* Employee Comfort */}
             {activeTab === 'employee-comfort' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
                     Employee Comfort & Productivity
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Create a more comfortable work environment that enhances employee productivity, reduces eye strain, 
-                    and eliminates hot spots and glare issues.
-                  </p>
+                  <Card className="p-6 mb-8">
+                    <div className="w-full">
+                      <p className="text-gray-600 mb-4">
+                        Improve your workspace with commercial window tinting that enhances comfort, reduces glare, and creates a balanced indoor environment. Our office window tinting solutions help minimize eye strain and improve overall employee productivity while maintaining natural light and clear outdoor views.
+                      </p>
+                      <p className="text-gray-600">
+                        With high-performance reflective films, your office gains better temperature balance, glare reduction, and a more consistent working atmosphere that supports focus and efficiency.
+                      </p>
+                    </div>
+                  </Card>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -229,13 +269,13 @@ const Commercial = () => {
                       Glare Reduction
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Eliminate screen glare and hot spots to create a more comfortable workspace for your employees.
+                      Eliminate discomfort from direct sunlight and reflections with advanced building window films designed for visual comfort.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li>• Reduce eye strain and fatigue</li>
                       <li>• Improve computer screen visibility</li>
-                      <li>• Eliminate hot spots and uneven lighting</li>
-                      <li>• Create more consistent work environment</li>
+                      <li>• Minimize glare and uneven lighting</li>
+                      <li>• Maintain comfortable work conditions</li>
                     </ul>
                   </Card>
 
@@ -244,13 +284,13 @@ const Commercial = () => {
                       Temperature Control
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Maintain consistent indoor temperatures and reduce the need for constant HVAC adjustments.
+                      Maintain consistent indoor temperatures across the office with energy-efficient commercial glass window tinting.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• More even temperature distribution</li>
-                      <li>• Reduced HVAC cycling and wear</li>
-                      <li>• Improved air quality and circulation</li>
-                      <li>• Enhanced employee comfort levels</li>
+                      <li>• Distributes temperature evenly throughout the space</li>
+                      <li>• Reduces HVAC strain and energy use</li>
+                      <li>• Improves indoor air quality and comfort</li>
+                      <li>• Enhances overall workplace satisfaction</li>
                     </ul>
                   </Card>
                 </div>
@@ -261,29 +301,34 @@ const Commercial = () => {
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Reduced Glare
                       </div>
-                      <p className="text-gray-600 text-xs">Eliminate screen glare and eye strain</p>
+                      <p className="text-gray-600 text-sm">Eliminates glare and visual strain for clearer screens</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Even Temperature
                       </div>
-                      <p className="text-gray-600 text-xs">Consistent climate control</p>
+                      <p className="text-gray-600 text-sm">Balances indoor climate and reduces hot spots</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Natural Light
                       </div>
-                      <p className="text-gray-600 text-xs">Maintain daylight and views</p>
+                      <p className="text-gray-600 text-sm">Maintains brightness and clear outdoor visibility</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Productivity
                       </div>
-                      <p className="text-gray-600 text-xs">Enhanced work performance</p>
+                      <p className="text-gray-600 text-sm">Creates a comfortable environment that supports better focus and performance</p>
                     </div>
+                  </div>
+                  <div className="mt-6 text-center">
+                    <p className="text-gray-600 text-sm">
+                      All films are made with Avery Dennison's trusted materials, offering long-term durability, clarity, and performance for commercial window tinting and office window film installations across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
+                    </p>
                   </div>
                 </Card>
               </div>
@@ -292,14 +337,20 @@ const Commercial = () => {
             {/* Security & Safety */}
             {activeTab === 'security-safety' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
                     Security & Safety Solutions
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Protect your business, employees, and assets with our security window films. 
-                    Deter break-ins, protect against storms, and ensure workplace safety.
-                  </p>
+                  <Card className="p-6 mb-8">
+                    <div className="w-full">
+                      <p className="text-gray-600 mb-4">
+                        Protect your business, employees, and assets with advanced security window films designed for strength, safety, and reliability. Our commercial window tinting solutions reinforce glass to help deter break-ins, reduce storm damage, and maintain workplace security without sacrificing visibility or appearance.
+                      </p>
+                      <p className="text-gray-600">
+                        With high-performance security films, your building gains added protection against theft, vandalism, and natural disasters while ensuring a safer environment for everyone inside.
+                      </p>
+                    </div>
+                  </Card>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -308,13 +359,13 @@ const Commercial = () => {
                       Break-In Protection
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Deter criminals and protect your business with films that make windows much harder to break through.
+                      Strengthen your property with durable security films for commercial glass that delay forced entry and reduce damage.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Delay forced entry attempts by minutes</li>
-                      <li>• Reduce risk of theft and vandalism</li>
-                      <li>• Lower insurance premiums</li>
-                      <li>• Provide employee peace of mind</li>
+                      <li>• Delays intrusion attempts by several minutes</li>
+                      <li>• Reduces the risk of theft and vandalism</li>
+                      <li>• Helps lower insurance costs for your business</li>
+                      <li>• Increases confidence and peace of mind for staff</li>
                     </ul>
                   </Card>
 
@@ -323,13 +374,13 @@ const Commercial = () => {
                       Storm Protection
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Protect your business from severe weather with films that prevent dangerous glass projectiles.
+                      Reduce storm-related damage with safety window films that keep glass bonded even under high impact.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Hold glass together during storms</li>
-                      <li>• Reduce wind and debris damage</li>
-                      <li>• Protect against flying glass shards</li>
-                      <li>• Meet hurricane safety standards</li>
+                      <li>• Keeps glass intact during high winds and debris impact</li>
+                      <li>• Minimizes damage from flying glass</li>
+                      <li>• Reduces water and wind infiltration</li>
+                      <li>• Meets safety standards for severe weather protection</li>
                     </ul>
                   </Card>
                 </div>
@@ -340,23 +391,28 @@ const Commercial = () => {
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="text-center">
-                      <div className="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         4 Mil Security
                       </div>
-                      <p className="text-gray-600 text-sm">Basic protection for standard windows</p>
+                      <p className="text-gray-600 text-sm">Standard safety for everyday protection</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         7 Mil Security
                       </div>
-                      <p className="text-gray-600 text-sm">Enhanced protection for high-risk areas</p>
+                      <p className="text-gray-600 text-sm">Enhanced protection for high-risk areas and large windows</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         14 Mil Security
                       </div>
-                      <p className="text-gray-600 text-sm">Maximum protection for vulnerable locations</p>
+                      <p className="text-gray-600 text-sm">Maximum defense for critical and vulnerable locations</p>
                     </div>
+                  </div>
+                  <div className="mt-6 text-center">
+                    <p className="text-gray-600 text-sm">
+                      All security films use Avery Dennison's trusted materials, ensuring clear visibility, strength, and lasting durability for commercial window tinting and building window film installations across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
+                    </p>
                   </div>
                 </Card>
               </div>
@@ -365,14 +421,20 @@ const Commercial = () => {
             {/* Branding & Aesthetics */}
             {activeTab === 'branding-aesthetics' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
                     Branding & Aesthetic Solutions
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Enhance your business image and brand presence with decorative and privacy films. 
-                    Create professional spaces that reflect your company's values and aesthetic.
-                  </p>
+                  <Card className="p-6 mb-8">
+                    <div className="w-full">
+                      <p className="text-gray-600 mb-4">
+                        Enhance your business identity with decorative window films that elevate professional appearance and brand presence. Our commercial window tinting and privacy film solutions create attractive, functional workspaces that reflect your company's values while improving privacy and comfort.
+                      </p>
+                      <p className="text-gray-600">
+                        With premium decorative and privacy films, your business gains a polished image that blends performance, design, and clarity for both clients and employees.
+                      </p>
+                    </div>
+                  </Card>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -381,13 +443,13 @@ const Commercial = () => {
                       Brand Enhancement
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Showcase your brand and create professional spaces that impress clients and visitors.
+                      Highlight your brand and create inviting environments that leave a lasting impression.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Custom logos and graphics</li>
-                      <li>• Professional meeting room privacy</li>
-                      <li>• Enhanced curb appeal</li>
-                      <li>• Coordinated interior design</li>
+                      <li>• Custom logos and graphic applications</li>
+                      <li>• Professional privacy for meeting spaces</li>
+                      <li>• Improved visual appeal and exterior presentation</li>
+                      <li>• Consistent branding across offices and storefronts</li>
                     </ul>
                   </Card>
 
@@ -396,13 +458,13 @@ const Commercial = () => {
                       Privacy Solutions
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Create private spaces for meetings, interviews, and confidential discussions.
+                      Design private and productive spaces with privacy window films for offices that balance visibility and discretion.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Conference room privacy</li>
-                      <li>• Executive office confidentiality</li>
-                      <li>• Reception area aesthetics</li>
-                      <li>• Break room comfort</li>
+                      <li>• Conference room and meeting privacy</li>
+                      <li>• Executive and managerial office confidentiality</li>
+                      <li>• Reception and waiting area aesthetics</li>
+                      <li>• Comfortable and visually pleasing break areas</li>
                     </ul>
                   </Card>
                 </div>
@@ -413,29 +475,34 @@ const Commercial = () => {
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Frosted
                       </div>
-                      <p className="text-gray-600 text-xs">Clean, professional privacy</p>
+                      <p className="text-gray-600 text-sm">Clean and modern privacy with diffused light</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Custom Graphics
                       </div>
-                      <p className="text-gray-600 text-xs">Brand logos and designs</p>
+                      <p className="text-gray-600 text-sm">Logos, designs, and branding details</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Patterned
                       </div>
-                      <p className="text-gray-600 text-xs">Decorative patterns and textures</p>
+                      <p className="text-gray-600 text-sm">Decorative surface textures for visual impact</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
-                        One-Way Vision
+                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                        One Way Vision
                       </div>
-                      <p className="text-gray-600 text-xs">Professional appearance</p>
+                      <p className="text-gray-600 text-sm">Professional look with interior clarity and exterior privacy</p>
                     </div>
+                  </div>
+                  <div className="mt-6 text-center">
+                    <p className="text-gray-600 text-sm">
+                      All films are crafted with Avery Dennison's trusted materials, ensuring durability, visual consistency, and long-term clarity for commercial decorative window film and office branding applications throughout North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
+                    </p>
                   </div>
                 </Card>
               </div>

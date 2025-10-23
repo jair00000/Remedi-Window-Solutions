@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { BoltIcon, SunIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import Section from '../components/UI/Section';
 import Container from '../components/UI/Container';
@@ -6,66 +8,32 @@ import Button from '../components/UI/Button';
 import Card from '../components/UI/Card';
 
 const Projects = () => {
+  const navigate = useNavigate();
+  
   const projects = [
     {
       id: 1,
-      title: 'Residential Window Tinting',
-      category: 'Residential',
-      location: 'Starkville, MS',
-      image: `${import.meta.env.BASE_URL}images/home/home-projects1.webp`,
-      description: 'Complete home window tinting with solar control films for enhanced privacy and energy efficiency.',
-      features: ['Solar Control', 'UV Protection', 'Privacy Enhancement']
+      title: 'Calhoun County School District',
+      category: 'Government & Schools',
+      location: 'Calhoun City',
+      image: `${import.meta.env.BASE_URL}images/projects/calhoun-county-school-window-tinting-calhoun-city-ms2.webp`,
+      description: 'Installing Security films for enhanced safety and protection.',
+      features: ['Security Films', 'Safety Compliance', 'Student Protection']
     },
     {
       id: 2,
-      title: 'Commercial Office Building',
-      category: 'Commercial',
-      location: 'Columbus, MS',
-      image: `${import.meta.env.BASE_URL}images/home/home-projects2.webp`,
-      description: 'Large-scale commercial tinting project for improved employee comfort and energy savings.',
-      features: ['Energy Efficiency', 'Employee Comfort', 'Professional Appearance']
-    },
-    {
-      id: 3,
-      title: 'Government Facility',
-      category: 'Government',
-      location: 'Tupelo, MS',
-      image: `${import.meta.env.BASE_URL}images/home/home-projects3.webp`,
-      description: 'Security and safety window films for government building with enhanced protection.',
-      features: ['Security Films', 'Safety Compliance', 'Energy Savings']
-    },
-    {
-      id: 4,
-      title: 'Educational Institution',
-      category: 'Institutional',
-      location: 'Oxford, MS',
-      image: `${import.meta.env.BASE_URL}images/home/home-projects4.webp`,
-      description: 'Window tinting for school building focusing on student safety and comfort.',
-      features: ['Safety Films', 'UV Protection', 'Comfort Enhancement']
-    },
-    {
-      id: 5,
-      title: 'Modern Residence',
-      category: 'Residential',
-      location: 'Tuscaloosa, AL',
-      image: `${import.meta.env.BASE_URL}images/gallery/IMG_2625.webp`,
-      description: 'Contemporary home with decorative and functional window films.',
-      features: ['Decorative Films', 'Privacy', 'Solar Control']
-    },
-    {
-      id: 6,
-      title: 'Retail Storefront',
-      category: 'Commercial',
-      location: 'Starkville, MS',
-      image: `${import.meta.env.BASE_URL}images/gallery/IMG_2626.webp`,
-      description: 'Storefront tinting for improved customer experience and energy efficiency.',
-      features: ['Customer Comfort', 'Energy Savings', 'Brand Protection']
+      title: 'Chickasaw County School District',
+      category: 'Government & Schools',
+      location: 'Vardaman City',
+      image: `${import.meta.env.BASE_URL}images/projects/chickasaw-county-school-window-tinting-vardaman-ms3.webp`,
+      description: 'Installing Security Films for school safety and energy efficiency.',
+      features: ['Security Films', 'Safety Enhancement', 'Energy Efficiency']
     }
   ];
 
-  const categories = ['All', 'Residential', 'Commercial', 'Government', 'Institutional'];
+  const categories = ['All', 'Residential', 'Commercial', 'Government & Schools'];
 
-  const [selectedCategory, setSelectedCategory] = React.useState('All');
+  const [selectedCategory, setSelectedCategory] = React.useState('Government & Schools');
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
@@ -73,13 +41,27 @@ const Projects = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Our Projects - Remedi Window Solutions | Window Tinting Portfolio</title>
+        <meta name="description" content="Explore our portfolio of completed window tinting projects across North Mississippi and West Alabama. From residential homes to commercial buildings, see our quality workmanship." />
+        <meta name="keywords" content="window tinting projects, portfolio, residential window tinting, commercial window tinting, government schools, North Mississippi, West Alabama, Starkville, Columbus, Tupelo, Oxford, Tuscaloosa" />
+        <meta property="og:title" content="Our Projects - Remedi Window Solutions | Window Tinting Portfolio" />
+        <meta property="og:description" content="Explore our portfolio of completed window tinting projects across North Mississippi and West Alabama. From residential homes to commercial buildings, see our quality workmanship." />
+        <meta property="og:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Projects - Remedi Window Solutions | Window Tinting Portfolio" />
+        <meta name="twitter:description" content="Explore our portfolio of completed window tinting projects across North Mississippi and West Alabama. From residential homes to commercial buildings, see our quality workmanship." />
+        <meta name="twitter:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+      </Helmet>
+      
       {/* Hero Section */}
       <section className="relative h-[60vh] overflow-hidden pt-48 lg:pt-52 bg-white dark:bg-gray-900 transition-colors duration-300">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${import.meta.env.BASE_URL}images/home/home-projects1.webp)`,
+            backgroundImage: `url(${import.meta.env.BASE_URL}images/projects/calhoun-county-school-window-tinting-calhoun-city-ms2.webp)`,
             backgroundPosition: 'center'
           }}
         ></div>
@@ -104,14 +86,14 @@ const Projects = () => {
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center mb-16">
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
-              <h3 className="text-3xl font-bold text-primary-500 mb-2">500+</h3>
-              <p className="text-gray-900 dark:text-black font-medium">Projects Completed</p>
-              <p className="text-sm text-gray-900 dark:text-black mt-2">Across North Mississippi & West Alabama</p>
+               <h3 className="text-3xl font-bold text-primary-500 mb-2">Trusted</h3>
+               <p className="text-gray-900 dark:text-black font-medium">Service</p>
+               <p className="text-sm text-gray-900 dark:text-black mt-2">Professional window film installation for homes and businesses</p>
             </Card>
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
-              <h3 className="text-3xl font-bold text-primary-500 mb-2">15+</h3>
-              <p className="text-gray-900 dark:text-black font-medium">Years Experience</p>
-              <p className="text-sm text-gray-900 dark:text-black mt-2">Professional Window Tinting Services</p>
+              <h3 className="text-3xl font-bold text-primary-500 mb-2">Experienced</h3>
+              <p className="text-gray-900 dark:text-black font-medium">Team</p>
+              <p className="text-sm text-gray-900 dark:text-black mt-2">Skilled installers with proven expertise and attention to detail</p>
             </Card>
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
               <h3 className="text-3xl font-bold text-primary-500 mb-2">5</h3>
@@ -128,7 +110,7 @@ const Projects = () => {
       </Section>
 
       {/* Project Categories Filter */}
-      <Section className="py-16 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+      <Section padding="none" className="bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">
@@ -159,10 +141,11 @@ const Projects = () => {
       </Section>
 
       {/* Projects Grid */}
-      <Section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <Section padding="none" className="pb-16 md:pb-24 bg-white dark:bg-gray-900 transition-colors duration-300">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project) => (
+          {filteredProjects.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredProjects.map((project) => (
               <Card key={project.id} hover className="overflow-hidden border border-gray-900 dark:border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="h-48 overflow-hidden">
                   <img 
@@ -199,7 +182,43 @@ const Projects = () => {
                 </div>
               </Card>
             ))}
-          </div>
+            </div>
+          ) : (
+            <div className="text-center py-16">
+              {selectedCategory === 'Residential' && (
+                <div className="max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                    Residential Projects Coming Soon
+                  </h3>
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                    We're helping homeowners across North Mississippi and West Alabama improve comfort, privacy, and energy efficiency with professional window films. Get in touch today and let your home be one of the first featured in our residential project gallery.
+                  </p>
+                  <Button 
+                    onClick={() => navigate('/contact')}
+                    className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3"
+                  >
+                    Start Your Project
+                  </Button>
+                </div>
+              )}
+              {selectedCategory === 'Commercial' && (
+                <div className="max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                    Commercial Projects Coming Soon
+                  </h3>
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                    We're partnering with local businesses to create energy-efficient, secure, and professional workspaces. Start your project today and have your building featured among our upcoming commercial installations.
+                  </p>
+                  <Button 
+                    onClick={() => navigate('/contact')}
+                    className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3"
+                  >
+                    Start Your Project
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
         </Container>
       </Section>
 
@@ -261,7 +280,7 @@ const Projects = () => {
                 <SparklesIcon style={{width: '40px', height: '40px', color: 'white'}} />
               </div>
               <h3 style={{color: 'white', fontSize: '20px', fontWeight: '600', marginBottom: '10px'}}>Expert Service</h3>
-              <p style={{color: 'rgba(255,255,255,0.8)', fontSize: '16px'}}>15+ years of professional experience</p>
+              <p style={{color: 'rgba(255,255,255,0.8)', fontSize: '16px'}}>Skilled installers with proven expertise and attention to detail</p>
             </div>
           </div>
           

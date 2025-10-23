@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Container from '../components/UI/Container';
 import Section from '../components/UI/Section';
 import Card from '../components/UI/Card';
@@ -219,6 +220,31 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact Remedi Window Solutions | Window Tinting in North Mississippi and West Alabama</title>
+        <meta
+          name="description"
+          content="Contact Remedi Window Solutions, a trusted window tinting company located in Vardaman, Mississippi. We provide professional window tinting and window film installation for homes, businesses, and institutions across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa."
+        />
+        <meta
+          name="keywords"
+          content="contact Remedi Window Solutions, window tinting company, window film installation, Avery Dennison window films, residential window tinting, commercial window tinting, security films, solar control films, decorative window films, North Mississippi, West Alabama, Vardaman Mississippi, Starkville, Columbus, Oxford, Tupelo, Tuscaloosa"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Contact Remedi Window Solutions | Window Tinting in North Mississippi and West Alabama"
+        />
+        <meta
+          property="og:description"
+          content="Get in touch with Remedi Window Solutions for professional window tinting services and window film installation in North Mississippi and West Alabama."
+        />
+        <meta property="og:url" content="https://jair00000.github.io/Remedi-Window-Solutions/contact" />
+        <meta property="og:site_name" content="Remedi Window Solutions" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+      </Helmet>
+      
       {/* Hero Section */}
       <section className="relative min-h-[100vh] overflow-hidden bg-gray-900 dark:bg-gray-900 transition-colors duration-300">
         {/* Three Column Diagonal Background */}
@@ -270,30 +296,41 @@ const Contact = () => {
         <Container className="relative z-10 text-center text-white flex items-center justify-center min-h-[100vh] pt-28 sm:pt-32 lg:pt-36 px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
-              <span className="text-primary-500">CONTACT</span>
-              <span className="block text-white">REMEDI WINDOW SOLUTIONS</span>
+              Contact <span className="text-primary-400">Remedi</span> Window Solutions
             </h1>
             <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 text-white animate-slide-up max-w-3xl mx-auto leading-relaxed">
-              Get in touch with North Mississippi's premier window tinting experts. We serve Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa with professional window tinting services.
+              Get in touch with a trusted window tinting company based in Vardaman, Mississippi, serving North Mississippi and West Alabama. We offer professional window tinting and window film installations for homes, businesses, and institutions in Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa. Reach out today to learn more about our Avery Dennison window films, designed for solar control, security, and energy-efficient performance.
             </p>
             
             {/* 2x2 Grid of Info Cards - Hidden on mobile, visible on tablet+ */}
             <div className="hidden md:grid md:grid-cols-2 gap-4 mb-8 max-w-4xl mx-auto animate-slide-up">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 shadow-lg flex items-center space-x-4">
                 <TrophyIcon className="h-8 w-8 text-white flex-shrink-0" />
-                <h3 className="text-lg font-semibold text-white">Best Quality Films</h3>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">Best Quality Films</h3>
+                  <p className="text-sm text-white/80">Using Avery Dennison window films for exceptional durability, clarity, and UV protection.</p>
+                </div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 shadow-lg flex items-center space-x-4">
                 <WrenchScrewdriverIcon className="h-8 w-8 text-white flex-shrink-0" />
-                <h3 className="text-lg font-semibold text-white">Professional Installation</h3>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">Professional Installation</h3>
+                  <p className="text-sm text-white/80">Precision window film installation performed by experienced technicians.</p>
+                </div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 shadow-lg flex items-center space-x-4">
                 <HomeIcon className="h-8 w-8 text-white flex-shrink-0" />
-                <h3 className="text-lg font-semibold text-white">Local Expertise</h3>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">Local Expertise</h3>
+                  <p className="text-sm text-white/80">Serving homeowners and businesses across North Mississippi and West Alabama with reliable results.</p>
+                </div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 shadow-lg flex items-center space-x-4">
                 <HeartIcon className="h-8 w-8 text-white flex-shrink-0" />
-                <h3 className="text-lg font-semibold text-white">Customer-Focused</h3>
+                <div>
+                  <h3 className="text-lg font-semibold text-white">Customer-Focused</h3>
+                  <p className="text-sm text-white/80">Clear communication, transparent pricing, and long-term service support.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -961,8 +998,7 @@ const Contact = () => {
       <Section background="gray">
         <Container>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center gap-3">
-              <PhoneIcon className="h-8 w-8 text-primary-600" />
+            <h2 className="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
               Alternative Contact Options
             </h2>
           </div>
@@ -970,11 +1006,6 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow duration-200">
-                <div className="flex justify-center mb-4">
-                  <div className="p-3 rounded-full" style={{backgroundColor: '#fecaca'}}>
-                    <info.icon className="h-6 w-6 text-primary-600" />
-                  </div>
-                </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-primary-600 mb-3">
                   {info.title}
                 </h3>

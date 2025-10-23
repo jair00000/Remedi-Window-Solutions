@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Section from '../components/UI/Section';
 import Button from '../components/UI/Button';
 import Card from '../components/UI/Card';
@@ -18,6 +19,30 @@ const Residential = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Residential Window Tinting | Remedi Window Solutions in North Mississippi and West Alabama</title>
+        <meta
+          name="description"
+          content="Enhance comfort, privacy, and energy efficiency with professional residential window tinting by Remedi Window Solutions. We offer solar control, security, privacy, and decorative window films using Avery Dennison's premium materials for homes across North Mississippi and West Alabama."
+        />
+        <meta
+          name="keywords"
+          content="residential window tinting, home window tinting, window film installation, Avery Dennison window films, solar control films, privacy window films, security window films, decorative window films, UV protection window tint, house window film, North Mississippi, West Alabama, Starkville, Columbus, Tupelo, Oxford, Tuscaloosa"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Residential Window Tinting | Remedi Window Solutions in North Mississippi and West Alabama"
+        />
+        <meta
+          property="og:description"
+          content="Remedi Window Solutions provides residential window tinting for privacy, solar control, and UV protection. Serving homes across North Mississippi and West Alabama with high-quality Avery Dennison window films."
+        />
+        <meta property="og:url" content="https://remediwindowsolutions.com/residential" />
+        <meta property="og:site_name" content="Remedi Window Solutions" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={`${import.meta.env.BASE_URL}images/icons-logo/remedi-logo.svg`} />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative h-[70vh] flex items-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
         {/* Background Image */}
@@ -36,13 +61,12 @@ const Residential = () => {
         <div className="relative z-10 w-full pt-20">
           <div className="container-custom">
             <div className="text-center">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 text-white">
-                Residential Window Solutions
-              </h1>
-              <p className="text-sm md:text-base mb-8 text-white max-w-3xl mx-auto">
-                Transform your home with premium window films that enhance comfort, security, and energy efficiency. 
-                Our residential solutions provide privacy, UV protection, and significant energy savings.
-              </p>
+               <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 text-white animate-fade-in">
+                 Residential Window Solutions
+               </h1>
+               <p className="text-sm md:text-base mb-8 text-white max-w-3xl mx-auto animate-slide-up">
+                 Transform your home with residential window tinting that enhances comfort, privacy, and energy efficiency. Our home window film solutions provide UV protection, solar control, and lasting performance while helping you achieve significant energy savings.
+               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
@@ -90,8 +114,7 @@ const Residential = () => {
               Residential Window Film Solutions
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-              Discover our comprehensive range of residential window films designed to enhance your home's comfort, 
-              security, and energy efficiency while maintaining your home's aesthetic appeal.
+              Every home has its own needs for comfort, privacy, and energy efficiency. Our residential window films help create a safer and more comfortable living space while keeping your home bright and welcoming. Explore our available options to see how each film can improve your home and fit your lifestyle.
             </p>
           </div>
 
@@ -140,87 +163,102 @@ const Residential = () => {
             {/* Solar Control Films */}
             {activeTab === 'solar-control' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
-                    Solar Control Films
-                  </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Reduce heat, glare, and UV damage while maintaining natural light and views. 
-                    Perfect for homes with large windows or sun-facing rooms.
-                  </p>
-                </div>
+                 <div className="mb-8">
+                   <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
+                     Solar Control Films
+                   </h3>
+                   <Card className="p-6 mb-8">
+                     <div className="w-full">
+                       <p className="text-gray-600 mb-4">
+                         Experience the benefits of residential window tinting that keeps your home cooler, safer, and more energy efficient. Our solar control window films for homes reduce heat, glare, and UV exposure while maintaining natural light and outdoor visibility. These films are ideal for home window tinting projects with large windows or sun-facing rooms, creating a comfortable indoor environment throughout the year.
+                       </p>
+                       <p className="text-gray-600">
+                         These advanced house window films provide reliable UV protection window tint that safeguards furniture, flooring, and interiors from fading while providing lasting comfort, clarity, and balance.
+                       </p>
+                     </div>
+                   </Card>
+                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                  <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      Energy Efficiency
-                    </h4>
-                    <p className="text-gray-600 mb-4">
-                      Reduce cooling costs by up to 30% while maintaining comfortable indoor temperatures year-round.
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Blocks up to 99% of harmful UV rays</li>
-                      <li>• Reduces solar heat gain by 60-80%</li>
-                      <li>• Eliminates hot spots and glare</li>
-                      <li>• Maintains natural light transmission</li>
-                    </ul>
-                  </Card>
+                   <Card className="p-6">
+                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                       Energy Efficiency
+                     </h4>
+                     <p className="text-gray-600 mb-4">
+                       Our solar control films help reduce cooling costs and improve comfort year-round.
+                     </p>
+                     <ul className="space-y-2 text-sm text-gray-600">
+                       <li>• Blocks up to 99 percent of harmful UV rays</li>
+                       <li>• Reduces solar heat gain by 60 to 80 percent</li>
+                       <li>• Minimizes glare and hot spots</li>
+                       <li>• Maintains natural light and visibility</li>
+                     </ul>
+                   </Card>
 
-                  <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      Comfort & Protection
-                    </h4>
-                    <p className="text-gray-600 mb-4">
-                      Protect your family and furnishings while enhancing indoor comfort and reducing eye strain.
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Prevents fading of furniture and flooring</li>
-                      <li>• Reduces glare on TVs and computer screens</li>
-                      <li>• Creates more even temperature distribution</li>
-                      <li>• Improves overall indoor air quality</li>
-                    </ul>
-                  </Card>
+                   <Card className="p-6">
+                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                       Comfort and Protection
+                     </h4>
+                     <p className="text-gray-600 mb-4">
+                       Protect your family and interiors with high-performance UV protection window tint that improves indoor comfort.
+                     </p>
+                     <ul className="space-y-2 text-sm text-gray-600">
+                       <li>• Prevents fading of furniture and flooring</li>
+                       <li>• Reduces glare from screens and surfaces</li>
+                       <li>• Balances indoor temperature consistently</li>
+                       <li>• Enhances overall comfort and air quality</li>
+                     </ul>
+                   </Card>
                 </div>
 
-                <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
-                    Popular Solar Control Options
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
-                        Clear Films
-                      </div>
-                      <p className="text-black text-sm">Invisible protection that maintains crystal clear views</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
-                        Tinted Films
-                      </div>
-                      <p className="text-black text-sm">Enhanced heat rejection with subtle color options</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
-                        Reflective Films
-                      </div>
-                      <p className="text-black text-sm">Maximum heat rejection with privacy benefits</p>
-                    </div>
-                  </div>
-                </Card>
+                 <Card className="p-6">
+                   <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                     Popular Solar Control Options
+                   </h4>
+                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                     <div className="text-center">
+                       <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Clear Films
+                       </div>
+                       <p className="text-black text-sm">Invisible protection that maintains natural light and clear views</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Tinted Films
+                       </div>
+                       <p className="text-black text-sm">Subtle tone with effective heat rejection for comfort and efficiency</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Reflective Films
+                       </div>
+                       <p className="text-black text-sm">Enhanced privacy and high-level heat control for modern homes</p>
+                     </div>
+                   </div>
+                   <p className="text-gray-600 text-center">
+                     All films use Avery Dennison's trusted materials, ensuring lasting performance and clarity for residential and house window film applications across North Mississippi and West Alabama.
+                   </p>
+                 </Card>
               </div>
             )}
 
             {/* Privacy Films */}
             {activeTab === 'privacy' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
                     Privacy Films
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Enhance your privacy without sacrificing natural light. Choose from various styles 
-                    to match your home's aesthetic while maintaining daytime privacy.
-                  </p>
+                  <Card className="p-6 mb-8">
+                    <div className="w-full">
+                      <p className="text-gray-600 mb-4">
+                        Enhance your privacy while keeping your interiors bright and comfortable. Our privacy window films for homes maintain natural light while adding comfort, protection, and style. Choose from several designs that match your home's aesthetic while improving security and energy control.
+                      </p>
+                      <p className="text-gray-600">
+                        These residential privacy films are ideal for bathrooms, bedrooms, and street-facing windows. They provide a practical home window tinting solution that balances visibility and privacy throughout the day.
+                      </p>
+                    </div>
+                  </Card>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -229,28 +267,28 @@ const Residential = () => {
                       Frosted Glass Effect
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      Create a frosted glass appearance that provides privacy while allowing light to pass through.
+                      Create a soft frosted appearance that offers privacy while allowing natural light to pass through.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Perfect for bathrooms and bedrooms</li>
-                      <li>• Maintains natural light transmission</li>
-                      <li>• Easy to clean and maintain</li>
-                      <li>• Various patterns and designs available</li>
+                      <li>• Suitable for bathrooms, offices, and bedrooms</li>
+                      <li>• Maintains consistent natural light transmission</li>
+                      <li>• Simple to clean and maintain</li>
+                      <li>• Available in multiple frosted window film styles and finishes</li>
                     </ul>
                   </Card>
 
                   <Card className="p-6">
                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      One-Way Vision
+                      One Way Vision
                     </h4>
                     <p className="text-gray-600 mb-4">
-                      See out clearly while preventing others from seeing in during daylight hours.
+                      Enjoy clear indoor visibility while limiting outside view during daylight hours.
                     </p>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Ideal for street-facing windows</li>
-                      <li>• Maintains outward visibility</li>
-                      <li>• Provides daytime privacy</li>
-                      <li>• Reduces solar heat gain</li>
+                      <li>• Ideal for street-facing windows and open areas</li>
+                      <li>• Maintains outward visibility and brightness</li>
+                      <li>• Provides daytime privacy and light control</li>
+                      <li>• Reduces glare and heat buildup indoors</li>
                     </ul>
                   </Card>
                 </div>
@@ -259,32 +297,35 @@ const Residential = () => {
                   <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
                     Privacy Film Options
                   </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
                     <div className="text-center">
-                      <div className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Frosted
                       </div>
-                      <p className="text-gray-600 text-xs">Complete privacy with light diffusion</p>
+                      <p className="text-black text-sm">Complete privacy with light diffusion</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Etched
                       </div>
-                      <p className="text-gray-600 text-xs">Decorative patterns and textures</p>
+                      <p className="text-black text-sm">Decorative patterns and textures</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Mirrored
                       </div>
-                      <p className="text-gray-600 text-xs">One-way vision with reflective surface</p>
+                      <p className="text-black text-sm">One-way vision with reflective surface</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
+                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Patterned
                       </div>
-                      <p className="text-gray-600 text-xs">Custom designs and logos</p>
+                      <p className="text-black text-sm">Custom designs and logos</p>
                     </div>
                   </div>
+                  <p className="text-gray-600 text-center">
+                    All films use Avery Dennison's trusted materials, ensuring lasting quality and visual clarity for residential and house window film applications across North Mississippi and West Alabama.
+                  </p>
                 </Card>
               </div>
             )}
@@ -292,152 +333,170 @@ const Residential = () => {
             {/* Security Films */}
             {activeTab === 'security' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
-                    Security Films
-                  </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Protect your home with security window films that hold glass together when broken, 
-                    providing protection against break-ins, storms, and accidents.
-                  </p>
-                </div>
+                 <div className="mb-8">
+                   <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
+                     Security Films
+                   </h3>
+                   <Card className="p-6 mb-8">
+                     <div className="w-full">
+                       <p className="text-gray-600 mb-4">
+                         Enhance your safety and peace of mind with security window films designed to strengthen glass and provide protection during break-ins, storms, and accidental impacts. Our residential window tinting solutions improve home safety by holding glass together when shattered while maintaining clear visibility and style.
+                       </p>
+                       <p className="text-gray-600">
+                         These advanced security films provide reliable protection for your home, reducing risks from forced entry, severe weather, and everyday accidents while preserving comfort and clarity.
+                       </p>
+                     </div>
+                   </Card>
+                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                  <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      Break-In Protection
-                    </h4>
-                    <p className="text-gray-600 mb-4">
-                      Deter burglars and protect your family with films that make windows much harder to break through.
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Holds glass together when shattered</li>
-                      <li>• Delays forced entry attempts</li>
-                      <li>• Reduces risk of injury from glass shards</li>
-                      <li>• Provides peace of mind</li>
-                    </ul>
-                  </Card>
+                   <Card className="p-6">
+                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                       Break-In Protection
+                     </h4>
+                     <p className="text-gray-600 mb-4">
+                       Keep your family and property secure with durable security window films for homes that make glass harder to penetrate.
+                     </p>
+                     <ul className="space-y-2 text-sm text-gray-600">
+                       <li>• Holds glass firmly in place when broken</li>
+                       <li>• Delays and discourages forced entry</li>
+                       <li>• Minimizes injury from shattered glass</li>
+                       <li>• Strengthens weak entry points</li>
+                     </ul>
+                   </Card>
 
-                  <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      Storm Protection
-                    </h4>
-                    <p className="text-gray-600 mb-4">
-                      Protect your home from severe weather with films that prevent glass from becoming dangerous projectiles.
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Holds glass in place during storms</li>
-                      <li>• Reduces wind and debris damage</li>
-                      <li>• Protects against flying glass shards</li>
-                      <li>• Meets hurricane safety standards</li>
-                    </ul>
-                  </Card>
+                   <Card className="p-6">
+                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                       Storm Protection
+                     </h4>
+                     <p className="text-gray-600 mb-4">
+                       Reduce damage and danger during severe weather with strong safety window films that prevent glass from turning into projectiles.
+                     </p>
+                     <ul className="space-y-2 text-sm text-gray-600">
+                       <li>• Keeps glass bonded during strong winds and impacts</li>
+                       <li>• Protects interiors from debris and water damage</li>
+                       <li>• Reduces risk of flying glass</li>
+                       <li>• Meets residential storm safety requirements</li>
+                     </ul>
+                   </Card>
                 </div>
 
-                <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
-                    Security Film Thickness Options
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
-                        4 Mil
-                      </div>
-                      <p className="text-gray-600 text-sm">Basic security for residential windows</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
-                        7 Mil
-                      </div>
-                      <p className="text-gray-600 text-sm">Enhanced protection for high-risk areas</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
-                        14 Mil
-                      </div>
-                      <p className="text-gray-600 text-sm">Maximum security for vulnerable windows</p>
-                    </div>
-                  </div>
-                </Card>
+                 <Card className="p-6">
+                   <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                     Security Film Thickness Options
+                   </h4>
+                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                     <div className="text-center">
+                       <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         4 Mil
+                       </div>
+                       <p className="text-gray-600 text-sm">Standard protection for residential windows and low-risk areas</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         7 Mil
+                       </div>
+                       <p className="text-gray-600 text-sm">Enhanced safety for homes with increased exposure or higher security needs</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         14 Mil
+                       </div>
+                       <p className="text-gray-600 text-sm">Maximum protection for vulnerable windows and severe weather-prone regions</p>
+                     </div>
+                   </div>
+                   <p className="text-gray-600 text-center">
+                     All films are made using Avery Dennison's trusted materials, providing long-lasting durability and clear visibility for residential and house window film installations throughout North Mississippi and West Alabama.
+                   </p>
+                 </Card>
               </div>
             )}
 
             {/* Decorative Films */}
             {activeTab === 'decorative' && (
               <div>
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-4">
-                    Decorative Films
-                  </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    Add style and personality to your home with decorative window films. 
-                    Create unique designs, add privacy, and enhance your home's aesthetic appeal.
-                  </p>
-                </div>
+                 <div className="mb-8">
+                   <h3 className="text-2xl md:text-3xl font-heading font-bold text-gray-900 dark:text-white mb-6">
+                     Decorative Films
+                   </h3>
+                   <Card className="p-6 mb-8">
+                     <div className="w-full">
+                       <p className="text-gray-600 mb-4">
+                         Add personality and style to your home with decorative window films that combine function and design. Our films provide privacy, light control, and visual appeal for any room while complementing your interior decor.
+                       </p>
+                       <p className="text-gray-600">
+                         These residential window tinting solutions help create unique designs and enhance your home's overall aesthetic without replacing glass. These high-quality decorative films help you achieve a custom look that reflects your personal taste with lasting performance and clarity.
+                       </p>
+                     </div>
+                   </Card>
+                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                  <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      Custom Designs
-                    </h4>
-                    <p className="text-gray-600 mb-4">
-                      Create unique window treatments with custom patterns, logos, or artistic designs.
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Personalized patterns and graphics</li>
-                      <li>• Company logos and branding</li>
-                      <li>• Artistic and abstract designs</li>
-                      <li>• Coordinate with home decor</li>
-                    </ul>
-                  </Card>
+                   <Card className="p-6">
+                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                       Custom Designs
+                     </h4>
+                     <p className="text-gray-600 mb-4">
+                       Create unique window treatments with personalized graphics, logos, or artistic patterns.
+                     </p>
+                     <ul className="space-y-2 text-sm text-gray-600">
+                       <li>• Custom patterns and layouts</li>
+                       <li>• Company logos and branding elements</li>
+                       <li>• Artistic or abstract designs</li>
+                       <li>• Complements any home or office style</li>
+                     </ul>
+                   </Card>
 
-                  <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
-                      Pattern Options
-                    </h4>
-                    <p className="text-gray-600 mb-4">
-                      Choose from a wide variety of patterns and textures to match your style.
-                    </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Geometric patterns and shapes</li>
-                      <li>• Nature-inspired designs</li>
-                      <li>• Modern and contemporary styles</li>
-                      <li>• Traditional and classic patterns</li>
-                    </ul>
-                  </Card>
+                   <Card className="p-6">
+                     <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                       Pattern Options
+                     </h4>
+                     <p className="text-gray-600 mb-4">
+                       Select from a broad range of decorative window film patterns and textures designed to fit your space.
+                     </p>
+                     <ul className="space-y-2 text-sm text-gray-600">
+                       <li>• Geometric and structural shapes</li>
+                       <li>• Nature-inspired and organic designs</li>
+                       <li>• Modern and contemporary finishes</li>
+                       <li>• Classic and timeless patterns</li>
+                     </ul>
+                   </Card>
                 </div>
 
-                <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
-                    Popular Decorative Styles
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
-                        Geometric
-                      </div>
-                      <p className="text-gray-600 text-xs">Modern lines and shapes</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
-                        Nature
-                      </div>
-                      <p className="text-gray-600 text-xs">Leaf and organic patterns</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
-                        Abstract
-                      </div>
-                      <p className="text-gray-600 text-xs">Artistic and creative designs</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold mb-2 inline-block">
-                        Custom
-                      </div>
-                      <p className="text-gray-600 text-xs">Your own unique design</p>
-                    </div>
-                  </div>
-                </Card>
+                 <Card className="p-6">
+                   <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                     Popular Decorative Styles
+                   </h4>
+                   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+                     <div className="text-center">
+                       <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Geometric
+                       </div>
+                       <p className="text-black text-sm">Modern lines and structural designs</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Nature
+                       </div>
+                       <p className="text-black text-sm">Leaf-inspired and organic patterns</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Abstract
+                       </div>
+                       <p className="text-black text-sm">Artistic visuals with creative forms</p>
+                     </div>
+                     <div className="text-center">
+                       <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                         Custom
+                       </div>
+                       <p className="text-black text-sm">Tailored designs made specifically for your home</p>
+                     </div>
+                   </div>
+                   <p className="text-gray-600 text-center">
+                     All films use Avery Dennison's trusted materials, ensuring visual clarity, quality, and long-lasting beauty for residential and house window film applications across North Mississippi and West Alabama.
+                   </p>
+                 </Card>
               </div>
             )}
           </div>
