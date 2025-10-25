@@ -87,23 +87,23 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center mb-16">
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
                <h3 className="text-3xl font-bold text-primary-500 mb-2">Trusted</h3>
-               <p className="text-gray-900 dark:text-black font-medium">Service</p>
-               <p className="text-sm text-gray-900 dark:text-black mt-2">Professional window film installation for homes and businesses</p>
+               <p className="text-gray-900 dark:text-white font-medium">Service</p>
+               <p className="text-sm text-gray-900 dark:text-gray-300 mt-2">Professional window film installation for homes and businesses</p>
             </Card>
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
               <h3 className="text-3xl font-bold text-primary-500 mb-2">Experienced</h3>
-              <p className="text-gray-900 dark:text-black font-medium">Team</p>
-              <p className="text-sm text-gray-900 dark:text-black mt-2">Skilled installers with proven expertise and attention to detail</p>
+              <p className="text-gray-900 dark:text-white font-medium">Team</p>
+              <p className="text-sm text-gray-900 dark:text-gray-300 mt-2">Skilled installers with proven expertise and attention to detail</p>
             </Card>
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
               <h3 className="text-3xl font-bold text-primary-500 mb-2">5</h3>
-              <p className="text-gray-900 dark:text-black font-medium">Cities Served</p>
-              <p className="text-sm text-gray-900 dark:text-black mt-2">Starkville, Columbus, Tupelo, Oxford, Tuscaloosa</p>
+              <p className="text-gray-900 dark:text-white font-medium">Cities Served</p>
+              <p className="text-sm text-gray-900 dark:text-gray-300 mt-2">Starkville, Columbus, Tupelo, Oxford, Tuscaloosa</p>
             </Card>
             <Card className="p-6 text-center border border-gray-900 dark:border-gray-100">
               <h3 className="text-3xl font-bold text-primary-500 mb-2">100%</h3>
-              <p className="text-gray-900 dark:text-black font-medium">Customer Satisfaction</p>
-              <p className="text-sm text-gray-900 dark:text-black mt-2">Quality workmanship guaranteed</p>
+              <p className="text-gray-900 dark:text-white font-medium">Customer Satisfaction</p>
+              <p className="text-sm text-gray-900 dark:text-gray-300 mt-2">Quality workmanship guaranteed</p>
             </Card>
           </div>
         </Container>
@@ -159,14 +159,14 @@ const Projects = () => {
                     <span className="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm font-semibold">
                       {project.category}
                     </span>
-                    <span className="text-sm text-gray-600 dark:text-black">
+                    <span className="text-sm text-gray-600 dark:text-gray-300">
                       {project.location}
                     </span>
                   </div>
-                  <h3 className="text-xl font-heading font-bold text-gray-900 dark:text-black mb-3">
+                  <h3 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-black mb-4 text-sm">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">

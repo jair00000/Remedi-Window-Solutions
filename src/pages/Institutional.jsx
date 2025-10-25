@@ -113,10 +113,10 @@ const Institutional = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">
               Government & Schools Window Film Solutions
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 dark:text-gray-300 max-w-4xl mx-auto">
               Public buildings and educational facilities face strict standards for safety, security, and efficiency. Our window film solutions help meet these requirements while creating safer, more comfortable, and energy-efficient spaces for staff, students, and visitors. Each film is designed for long-term reliability and easy maintenance, ensuring consistent performance for years to come.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mt-4">
+            <p className="text-lg text-gray-600 dark:text-gray-300 dark:text-gray-300 max-w-4xl mx-auto mt-4">
               Explore our specialized options below to learn how window films can strengthen protection, improve comfort, and support compliance across your facility.
             </p>
           </div>
@@ -172,10 +172,10 @@ const Institutional = () => {
                   </h3>
                   <Card className="p-6 mb-8">
                     <div className="w-full">
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
                         Enhance security, comfort, and energy efficiency in public facilities with government and school window tinting designed for performance and compliance. Our window film installations for schools and municipal buildings provide long-lasting protection, privacy, and energy savings while maintaining professional appearance and natural light.
                       </p>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         Using certified safety and solar control films, we help meet federal and state requirements for security window films for schools, offering durable solutions that improve safety, sustainability, and comfort in every public environment.
                       </p>
                     </div>
@@ -184,13 +184,13 @@ const Institutional = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Security and Safety
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Protect public buildings, classrooms, and offices with shatterproof and safety window films that meet government and institutional standards.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Blast-resistant options for added protection</li>
                       <li>• Delays and deters forced entry attempts</li>
                       <li>• Reduces hazards from glass breakage</li>
@@ -199,13 +199,13 @@ const Institutional = () => {
                   </Card>
 
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Energy Cost Reduction
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Lower utility expenses and improve building efficiency with heat control window films that regulate indoor temperature while preserving visibility.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Reduces cooling costs by 25 to 40 percent</li>
                       <li>• Improves energy performance ratings</li>
                       <li>• Qualifies for local and federal rebate programs</li>
@@ -215,37 +215,37 @@ const Institutional = () => {
                 </div>
 
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Government Building Applications
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-blue-100 text-blue-800 dark:bg-blue-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Courthouses
                       </div>
-                      <p className="text-gray-600 text-sm">Enhanced privacy and security for judicial facilities</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Enhanced privacy and security for judicial facilities</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-green-100 text-green-800 dark:bg-green-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         City Halls
                       </div>
-                      <p className="text-gray-600 text-sm">Professional appearance and improved energy performance</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Professional appearance and improved energy performance</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-purple-100 text-purple-800 dark:bg-purple-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Police Stations
                       </div>
-                      <p className="text-gray-600 text-sm">Added protection with security window films for schools and government offices</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Added protection with security window films for schools and government offices</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-gray-800 text-white dark:bg-gray-400 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Public Libraries
                       </div>
-                      <p className="text-gray-600 text-sm">Comfort and anti glare window films for a productive environment</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Comfort and anti glare window films for a productive environment</p>
                     </div>
                   </div>
                   <div className="mt-6 text-center">
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
                       All films are made with Avery Dennison's trusted materials, ensuring durability, safety, and clarity for government and school window film installations throughout North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
                     </p>
                   </div>
@@ -262,10 +262,10 @@ const Institutional = () => {
                   </h3>
                   <Card className="p-6 mb-8">
                     <div className="w-full">
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
                         Create safer, more comfortable learning environments with school window tinting designed for classrooms, libraries, and administrative buildings. Our school window film installations improve comfort, security, and energy efficiency while maintaining natural daylight and a professional appearance.
                       </p>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         Using certified safety and heat control window films, we provide long-lasting protection that meets institutional standards and supports a productive educational environment for both students and staff.
                       </p>
                     </div>
@@ -274,13 +274,13 @@ const Institutional = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Student Safety
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Protect students and staff with durable security window films for schools that keep glass intact during impact or forced entry.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Prevents injuries from shattered glass</li>
                       <li>• Deters vandalism and break-ins</li>
                       <li>• Meets federal and local school safety guidelines</li>
@@ -289,13 +289,13 @@ const Institutional = () => {
                   </Card>
 
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Learning Environment
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Improve classroom comfort and focus with anti glare window films and UV protection tint that reduce distractions and protect school property.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Reduces glare on whiteboards, screens, and devices</li>
                       <li>• Prevents heat buildup and hot spots</li>
                       <li>• Protects equipment and furnishings from UV damage</li>
@@ -305,37 +305,37 @@ const Institutional = () => {
                 </div>
 
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Educational Facility Applications
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-blue-100 text-blue-800 dark:bg-blue-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Classrooms
                       </div>
-                      <p className="text-gray-600 text-sm">Comfort, glare reduction, and safety for students and teachers</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Comfort, glare reduction, and safety for students and teachers</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-green-100 text-green-800 dark:bg-green-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Gymnasiums
                       </div>
-                      <p className="text-gray-600 text-sm">Improved cooling and UV protection for high-activity areas</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Improved cooling and UV protection for high-activity areas</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-purple-100 text-purple-800 dark:bg-purple-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Libraries
                       </div>
-                      <p className="text-gray-600 text-sm">Consistent lighting and anti glare window tint for reading comfort</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Consistent lighting and anti glare window tint for reading comfort</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-gray-800 text-white dark:bg-gray-400 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Administration
                       </div>
-                      <p className="text-gray-600 text-sm">Professional appearance with energy savings and temperature control</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Professional appearance with energy savings and temperature control</p>
                     </div>
                   </div>
                   <div className="mt-6 text-center">
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
                       All films are made with Avery Dennison's trusted materials, ensuring clarity, strength, and efficiency for school window tinting and safety window film installations across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
                     </p>
                   </div>
@@ -352,10 +352,10 @@ const Institutional = () => {
                   </h3>
                   <Card className="p-6 mb-8">
                     <div className="w-full">
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
                         Meet strict federal and institutional standards with government and school window film solutions designed for safety, security, and compliance. Our security window films for government buildings and schools provide proven protection against impacts, storms, and unauthorized entry while maintaining clear visibility and architectural aesthetics.
                       </p>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         With certified shatterproof window films, your facilities benefit from professional-grade materials, precise installation, and full compliance documentation for both safety and performance.
                       </p>
                     </div>
@@ -364,13 +364,13 @@ const Institutional = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Compliance Standards
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Our safety window tints are tested and approved under multiple government and institutional compliance codes.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• ASTM E1996-17 compliant materials</li>
                       <li>• Meets hurricane and severe weather protection standards</li>
                       <li>• Fire and building safety code compliance</li>
@@ -379,13 +379,13 @@ const Institutional = () => {
                   </Card>
 
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Professional Documentation
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Ensure transparency and accountability with complete project documentation and certifications.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Installation and compliance certificates included</li>
                       <li>• Manufacturer and installer warranty documentation</li>
                       <li>• Verification and inspection reporting</li>
@@ -395,31 +395,31 @@ const Institutional = () => {
                 </div>
 
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Security Film Thickness Options
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-blue-100 text-blue-800 dark:bg-blue-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         7 Mil Security
                       </div>
-                      <p className="text-gray-600 text-sm">Standard safety and security for most public facilities</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Standard safety and security for most public facilities</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-green-100 text-green-800 dark:bg-green-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         14 Mil Security
                       </div>
-                      <p className="text-gray-600 text-sm">Enhanced protection for high-risk and sensitive locations</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Enhanced protection for high-risk and sensitive locations</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-gray-800 text-white dark:bg-gray-400 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Blast Resistant
                       </div>
-                      <p className="text-gray-600 text-sm">Maximum strength and performance for critical infrastructure</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Maximum strength and performance for critical infrastructure</p>
                     </div>
                   </div>
                   <div className="mt-6 text-center">
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
                       All films are produced using Avery Dennison's trusted materials, offering durability, clarity, and verified compliance for government and school window film installations across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
                     </p>
                   </div>
@@ -436,10 +436,10 @@ const Institutional = () => {
                   </h3>
                   <Card className="p-6 mb-8">
                     <div className="w-full">
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">
                         Reduce operational costs and improve building efficiency with government and school window tinting designed for performance and sustainability. Our heat control window films help regulate indoor temperatures, reduce strain on HVAC systems, and maintain bright, comfortable environments for students, staff, and public employees.
                       </p>
-                      <p className="text-gray-600">
+                      <p className="text-gray-600 dark:text-gray-300">
                         With high-performance solar control films, facilities benefit from measurable energy savings, reduced glare, and long-term durability while supporting institutional energy goals.
                       </p>
                     </div>
@@ -448,13 +448,13 @@ const Institutional = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Cost Savings
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Significant energy cost reduction for government and educational facilities with tight operational budgets.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Reduce HVAC costs by 25 to 40 percent</li>
                       <li>• Lower maintenance and replacement expenses</li>
                       <li>• Qualify for energy efficiency rebate programs</li>
@@ -463,13 +463,13 @@ const Institutional = () => {
                   </Card>
 
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       Environmental Benefits
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Support sustainability goals and reduce environmental impact with certified energy saving window tint solutions.
                     </p>
-                    <ul className="space-y-2 text-sm text-gray-600">
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                       <li>• Reduce carbon footprint for public facilities</li>
                       <li>• Lower total energy consumption</li>
                       <li>• Support green building initiatives</li>
@@ -479,31 +479,31 @@ const Institutional = () => {
                 </div>
 
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Energy Efficiency Film Options
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="text-center">
-                      <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-blue-100 text-blue-800 dark:bg-blue-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Spectrally Selective
                       </div>
-                      <p className="text-gray-600 text-sm">Maximum natural light with superior heat rejection</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Maximum natural light with superior heat rejection</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-green-100 text-green-800 dark:bg-green-500 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Ceramic Films
                       </div>
-                      <p className="text-gray-600 text-sm">Premium performance with clear visibility and durability</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Premium performance with clear visibility and durability</p>
                     </div>
                     <div className="text-center">
-                      <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
+                      <div className="bg-gray-800 text-white dark:bg-gray-400 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-3 inline-block">
                         Dual Reflective
                       </div>
-                      <p className="text-gray-600 text-sm">Balanced performance with reduced glare and professional appearance</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm">Balanced performance with reduced glare and professional appearance</p>
                     </div>
                   </div>
                   <div className="mt-6 text-center">
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
                       All films use Avery Dennison's trusted materials, providing long-term clarity, energy savings, and performance for government and school window film installations across North Mississippi and West Alabama, including Starkville, Columbus, Tupelo, Oxford, and Tuscaloosa.
                     </p>
                   </div>
@@ -521,7 +521,7 @@ const Institutional = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">
               Why Choose Institutional Window Films?
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 dark:text-gray-300 max-w-4xl mx-auto">
               Our institutional window film solutions provide measurable benefits for government buildings, 
               schools, and public facilities while meeting strict compliance and safety requirements.
             </p>
@@ -534,10 +534,10 @@ const Institutional = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-black mb-3">
+              <h3 className="text-xl font-heading font-bold text-black dark:text-white mb-3">
                 Enhanced Security
               </h3>
-              <p className="text-black">
+              <p className="text-black dark:text-white">
                 Protect government facilities and schools with security films that meet strict safety standards.
               </p>
             </Card>
@@ -548,10 +548,10 @@ const Institutional = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-black mb-3">
+              <h3 className="text-xl font-heading font-bold text-black dark:text-white mb-3">
                 Cost Reduction
               </h3>
-              <p className="text-black">
+              <p className="text-black dark:text-white">
                 Reduce energy costs by up to 40% and improve building efficiency with measurable ROI.
               </p>
             </Card>
@@ -562,10 +562,10 @@ const Institutional = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-black mb-3">
+              <h3 className="text-xl font-heading font-bold text-black dark:text-white mb-3">
                 Energy Efficiency
               </h3>
-              <p className="text-black">
+              <p className="text-black dark:text-white">
                 Improve building performance and qualify for energy rebates and green building certifications.
               </p>
             </Card>
@@ -576,10 +576,10 @@ const Institutional = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-black mb-3">
+              <h3 className="text-xl font-heading font-bold text-black dark:text-white mb-3">
                 Compliance Ready
               </h3>
-              <p className="text-black">
+              <p className="text-black dark:text-white">
                 Meet federal, state, and local government requirements with certified installation and documentation.
               </p>
             </Card>
@@ -591,10 +591,10 @@ const Institutional = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-black mb-3">
+              <h3 className="text-xl font-heading font-bold text-black dark:text-white mb-3">
                 Safety First
               </h3>
-              <p className="text-black">
+              <p className="text-black dark:text-white">
                 Protect students, staff, and visitors with films that prevent glass shard injuries and enhance security.
               </p>
             </Card>
@@ -605,10 +605,10 @@ const Institutional = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-black mb-3">
+              <h3 className="text-xl font-heading font-bold text-black dark:text-white mb-3">
                 Long-term Value
               </h3>
-              <p className="text-black">
+              <p className="text-black dark:text-white">
                 Durable solutions that provide lasting benefits with minimal maintenance requirements.
               </p>
             </Card>

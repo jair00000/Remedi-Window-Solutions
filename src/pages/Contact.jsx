@@ -383,7 +383,7 @@ const Contact = () => {
                 <form onSubmit={handleContactSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                         Full Name *
                       </label>
                       <input
@@ -399,7 +399,7 @@ const Contact = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                         Company / Organization (optional)
                       </label>
                       <input
@@ -416,7 +416,7 @@ const Contact = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                         Email Address *
                       </label>
                       <input
@@ -432,7 +432,7 @@ const Contact = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                         Phone (optional, international)
                       </label>
                       <input
@@ -448,7 +448,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="location" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                       Project Address or Location (optional)
                     </label>
                     <input
@@ -463,12 +463,12 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-3">
+                    <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                       How can we help? *
                     </label>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {services.map((service) => (
-                        <label key={service} className="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <label key={service} className="flex items-center space-x-3 p-3 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer">
                           <input
                             type="checkbox"
                             name="services"
@@ -477,14 +477,14 @@ const Contact = () => {
                             onChange={handleContactInputChange}
                             className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
                           />
-                          <span className="text-sm text-gray-700">{service}</span>
+                          <span className="text-sm text-gray-700 dark:text-white">{service}</span>
                         </label>
                       ))}
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                       Message *
                     </label>
                     <textarea
@@ -503,7 +503,7 @@ const Contact = () => {
                   <Button type="submit" className="w-full">
                     Send Message
                   </Button>
-                  <p className="text-center text-sm text-gray-600">
+                  <p className="text-center text-sm text-gray-600 dark:text-gray-300">
                     We'll get back to you with details and a personalized recommendation.
                   </p>
                 </form>
@@ -514,7 +514,7 @@ const Contact = () => {
             {activeTab === 'quote' && (
               <Card className="max-w-4xl mx-auto">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-heading font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-heading font-bold text-gray-900 dark:text-white mb-2">
                     Remedi Window Solutions — Free Quote Form
                   </h3>
                   <div className="flex justify-center mb-4">
@@ -525,7 +525,7 @@ const Contact = () => {
                       ></div>
                     </div>
                   </div>
-                  <p className="text-sm text-gray-500">Step {currentStep} of 5</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-300">Step {currentStep} of 5</p>
                 </div>
 
                 <form onSubmit={handleQuoteSubmit}>
@@ -533,12 +533,12 @@ const Contact = () => {
                   {currentStep === 1 && (
                     <div className="space-y-6">
                       <div className="text-center mb-6">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-2">1) About You</h4>
+                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">1) About You</h4>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <label htmlFor="quoteFullName" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="quoteFullName" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Full Name *
                           </label>
                           <input
@@ -554,7 +554,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                          <label htmlFor="quoteCompany" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="quoteCompany" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Company / Organization (optional)
                           </label>
                           <input
@@ -569,7 +569,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                          <label htmlFor="role" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="role" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Role (optional)
                           </label>
                           <select
@@ -589,7 +589,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                          <label htmlFor="quoteEmail" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="quoteEmail" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Email *
                           </label>
                           <input
@@ -605,7 +605,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                          <label htmlFor="quotePhone" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="quotePhone" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Phone *
                           </label>
                           <input
@@ -621,7 +621,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                          <label htmlFor="projectLocation" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="projectLocation" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Project Location (City/State) *
                           </label>
                           <input
@@ -643,11 +643,11 @@ const Contact = () => {
                   {currentStep === 2 && (
                     <div className="space-y-6">
                       <div className="text-center mb-6">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-2">2) Project Details</h4>
+                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">2) Project Details</h4>
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-3">
+                        <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                           Project Type * (select all that apply)
                         </label>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -661,14 +661,14 @@ const Contact = () => {
                                 onChange={handleQuoteInputChange}
                                 className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
                               />
-                              <span className="text-sm text-gray-700">{type}</span>
+                              <span className="text-sm text-gray-700 dark:text-white">{type}</span>
                             </label>
                           ))}
                         </div>
                       </div>
 
                       <div>
-                        <label htmlFor="projectSummary" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="projectSummary" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                           Project Summary *
                         </label>
                         <textarea
@@ -684,7 +684,7 @@ const Contact = () => {
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-3">
+                        <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                           Key Features / Goals (select all that apply)
                         </label>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -698,14 +698,14 @@ const Contact = () => {
                                 onChange={handleQuoteInputChange}
                                 className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
                               />
-                              <span className="text-sm text-gray-700">{feature}</span>
+                              <span className="text-sm text-gray-700 dark:text-white">{feature}</span>
                             </label>
                           ))}
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-3">
+                        <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                           Current Condition (select all that apply)
                         </label>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -719,14 +719,14 @@ const Contact = () => {
                                 onChange={handleQuoteInputChange}
                                 className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
                               />
-                              <span className="text-sm text-gray-700">{condition}</span>
+                              <span className="text-sm text-gray-700 dark:text-white">{condition}</span>
                             </label>
                           ))}
                         </div>
                       </div>
 
                       <div>
-                        <label htmlFor="preferredFilmType" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="preferredFilmType" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                           Preferred Film Type (optional)
                         </label>
                         <input
@@ -746,12 +746,12 @@ const Contact = () => {
                   {currentStep === 3 && (
                     <div className="space-y-6">
                       <div className="text-center mb-6">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-2">3) Property & Measurement</h4>
+                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">3) Property & Measurement</h4>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <label htmlFor="numberOfWindows" className="block text-sm font-medium text-gray-700 mb-2">
+                          <label htmlFor="numberOfWindows" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                             Number of Windows / Approximate Area (optional)
                           </label>
                           <input
@@ -766,7 +766,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-3">
+                          <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                             Building Type *
                           </label>
                           <div className="space-y-2">
@@ -780,7 +780,7 @@ const Contact = () => {
                                   onChange={handleQuoteInputChange}
                                   className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300"
                                 />
-                                <span className="text-sm text-gray-700">{type}</span>
+                                <span className="text-sm text-gray-700 dark:text-white">{type}</span>
                               </label>
                             ))}
                           </div>
@@ -788,7 +788,7 @@ const Contact = () => {
                       </div>
 
                       <div>
-                        <label htmlFor="accessibilityDetails" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="accessibilityDetails" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                           Accessibility Details (optional)
                         </label>
                         <input
@@ -808,12 +808,12 @@ const Contact = () => {
                   {currentStep === 4 && (
                     <div className="space-y-6">
                       <div className="text-center mb-6">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-2">4) Budget & Timeline</h4>
+                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">4) Budget & Timeline</h4>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                          <label className="block text-sm font-medium text-gray-700 mb-3">
+                          <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                             Estimated Budget Range (USD) *
                           </label>
                           <div className="space-y-2">
@@ -827,7 +827,7 @@ const Contact = () => {
                                   onChange={handleQuoteInputChange}
                                   className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300"
                                 />
-                                <span className="text-sm text-gray-700">{range}</span>
+                                <span className="text-sm text-gray-700 dark:text-white">{range}</span>
                               </label>
                             ))}
                           </div>
@@ -835,7 +835,7 @@ const Contact = () => {
 
                         <div className="space-y-6">
                           <div>
-                            <label htmlFor="preferredStartDate" className="block text-sm font-medium text-gray-700 mb-2">
+                            <label htmlFor="preferredStartDate" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                               Preferred Start Date (optional)
                             </label>
                             <input
@@ -849,7 +849,7 @@ const Contact = () => {
                           </div>
 
                           <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-3">
+                            <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                               Ideal Completion Window *
                             </label>
                             <div className="space-y-2">
@@ -863,14 +863,14 @@ const Contact = () => {
                                     onChange={handleQuoteInputChange}
                                     className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300"
                                   />
-                                  <span className="text-sm text-gray-700">{window}</span>
+                                  <span className="text-sm text-gray-700 dark:text-white">{window}</span>
                                 </label>
                               ))}
                             </div>
                           </div>
 
                           <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-3">
+                            <label className="block text-sm font-medium text-gray-700 dark:text-white mb-3">
                               Do you need on-site consultation? *
                             </label>
                             <div className="space-y-2">
@@ -884,7 +884,7 @@ const Contact = () => {
                                     onChange={handleQuoteInputChange}
                                     className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300"
                                   />
-                                  <span className="text-sm text-gray-700">{option}</span>
+                                  <span className="text-sm text-gray-700 dark:text-white">{option}</span>
                                 </label>
                               ))}
                             </div>
@@ -898,11 +898,11 @@ const Contact = () => {
                   {currentStep === 5 && (
                     <div className="space-y-6">
                       <div className="text-center mb-6">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-2">5) Attachments & Final</h4>
+                        <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">5) Attachments & Final</h4>
                       </div>
 
                       <div>
-                        <label htmlFor="fileUpload" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="fileUpload" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                           Upload Photos or Measurements (optional)
                         </label>
                         <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
@@ -923,7 +923,7 @@ const Contact = () => {
                       </div>
 
                       <div>
-                        <label htmlFor="howDidYouHear" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="howDidYouHear" className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                           How did you hear about us? (optional)
                         </label>
                         <select
@@ -950,7 +950,7 @@ const Contact = () => {
                             required
                             className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded mt-1"
                           />
-                          <span className="text-sm text-gray-700">
+                          <span className="text-sm text-gray-700 dark:text-white">
                             I agree to be contacted and accept the Privacy Policy. *
                           </span>
                         </label>
@@ -1006,15 +1006,15 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow duration-200">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-primary-600 mb-3">
+                <h3 className="text-lg font-semibold text-primary-600 mb-3">
                   {info.title}
                 </h3>
                 <div className="space-y-1 mb-4">
                   {info.details.map((detail, idx) => (
-                    <p key={idx} className="text-gray-600 dark:text-gray-900 text-sm break-words">{detail}</p>
+                    <p key={idx} className="text-gray-600 dark:text-white text-sm break-words">{detail}</p>
                   ))}
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-700">{info.description}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-300">{info.description}</p>
               </Card>
             ))}
           </div>

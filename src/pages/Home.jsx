@@ -113,7 +113,7 @@ const Home = () => {
                   className="bg-primary-500 hover:bg-primary-600 text-white text-sm sm:text-lg px-4 sm:px-8 py-2 sm:py-4 w-full sm:w-auto"
                   onClick={() => navigate('/contact')}
                 >
-                  Free Quotation
+                  Free Quote
                 </Button>
               </div>
             </div>
@@ -169,10 +169,10 @@ const Home = () => {
                 />
               </div>
               <div className="p-3 sm:p-4 flex flex-col flex-grow">
-                <h3 className="text-lg sm:text-xl font-heading font-semibold text-black mb-2 sm:mb-3">
+                <h3 className="text-lg sm:text-xl font-heading font-semibold text-black dark:text-white mb-2 sm:mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed flex-grow">
+                <p className="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed flex-grow">
                   {service.description}
                 </p>
                 <Button 
@@ -198,10 +198,13 @@ const Home = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           
-          {/* Mobile: Full Width Overlay, Desktop: Left Side Only with Diagonal Cut */}
-          <div className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-black/80 flex items-center lg:[clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]">
-            <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16">
-              <div className="max-w-lg mx-auto lg:mx-0">
+          {/* Diagonal overlay covering 65% width with sharper angle */}
+          <div className="absolute inset-y-0 left-0 w-full lg:w-[65%] bg-black/80 lg:[clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]"></div>
+          
+          {/* Content with proper padding */}
+          <Container className="absolute inset-0 flex items-center pointer-events-none">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto w-full pointer-events-auto">
+              <div>
                 <h3 className="text-primary-500 text-sm sm:text-base lg:text-lg font-semibold mb-3 sm:mb-4 tracking-wide">
                   ABOUT REMEDI
                 </h3>
@@ -234,7 +237,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
 
       {/* Our Projects Section */}
@@ -312,18 +315,18 @@ const Home = () => {
         <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 text-center px-4 sm:px-6">
           <Card className="p-4 sm:p-6 lg:p-8 text-center border border-gray-900 dark:border-gray-100">
             <h3 className="text-2xl sm:text-3xl font-bold text-primary-500 mb-2">Security</h3>
-            <p className="text-black font-medium text-sm sm:text-base">Enhanced Protection</p>
-            <p className="text-xs sm:text-sm text-black mt-2">Advanced security films for your safety</p>
+            <p className="text-black dark:text-white font-medium text-sm sm:text-base">Enhanced Protection</p>
+            <p className="text-xs sm:text-sm text-black dark:text-gray-300 mt-2">Advanced security films for your safety</p>
           </Card>
           <Card className="p-4 sm:p-6 lg:p-8 text-center border border-gray-900 dark:border-gray-100">
             <h3 className="text-2xl sm:text-3xl font-bold text-primary-500 mb-2">5</h3>
-            <p className="text-black font-medium text-sm sm:text-base">Cities Served</p>
-            <p className="text-xs sm:text-sm text-black mt-2">Starkville, Columbus, Tupelo, Oxford, Tuscaloosa</p>
+            <p className="text-black dark:text-white font-medium text-sm sm:text-base">Cities Served</p>
+            <p className="text-xs sm:text-sm text-black dark:text-gray-300 mt-2">Starkville, Columbus, Tupelo, Oxford, Tuscaloosa</p>
           </Card>
           <Card className="p-4 sm:p-6 lg:p-8 text-center border border-gray-900 dark:border-gray-100 sm:col-span-2 lg:col-span-1">
             <h3 className="text-2xl sm:text-3xl font-bold text-primary-500 mb-2">Expert Installation</h3>
-            <p className="text-black font-medium text-sm sm:text-base">Professional Results</p>
-            <p className="text-xs sm:text-sm text-black mt-2">Certified installers with precision techniques</p>
+            <p className="text-black dark:text-white font-medium text-sm sm:text-base">Professional Results</p>
+            <p className="text-xs sm:text-sm text-black dark:text-gray-300 mt-2">Certified installers with precision techniques</p>
           </Card>
         </div>
 
@@ -383,10 +386,13 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         
-        {/* Mobile: Full Width Overlay, Desktop: Left Side Only with Diagonal Cut */}
-        <div className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-black/80 flex items-center lg:[clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]">
-          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16">
-            <div className="max-w-lg mx-auto lg:mx-0">
+        {/* Diagonal overlay covering 65% width with sharper angle */}
+        <div className="absolute inset-y-0 left-0 w-full lg:w-[65%] bg-black/80 lg:[clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]"></div>
+        
+        {/* Content with proper padding */}
+        <Container className="absolute inset-0 flex items-center pointer-events-none">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto w-full pointer-events-auto">
+            <div>
               <h3 className="text-primary-500 text-sm sm:text-base lg:text-lg font-semibold mb-3 sm:mb-4 tracking-wide">
                  CITIES WE PROUDLY SERVE
                </h3>
@@ -452,10 +458,10 @@ const Home = () => {
                   LEARN MORE
                 </Button>
                </div>
-             </div>
-               </div>
-             </div>
-           </div>
+            </div>
+          </div>
+        </Container>
+      </div>
 
       {/* Testimonials Section */}
       <Section className="py-12 sm:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">

@@ -216,18 +216,18 @@ const ServiceFilms = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   {/* DR OptiTune i */}
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       DR OptiTune i
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Stylish reflective outer layer to cut heat and glare; lower-reflectance inner layer to preserve views.
                     </p>
                     
                     <div className="mb-4">
-                      <h5 className="text-sm font-semibold text-gray-900 mb-2">VLT Options:</h5>
+                      <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">VLT Options:</h5>
                       <div className="flex flex-wrap gap-2">
                         {['05i', '15i', '20i', '30i', '40i'].map((vlt) => (
-                          <span key={vlt} className="bg-primary-100 text-primary-800 px-2 py-1 rounded-full text-xs font-medium">
+                          <span key={vlt} className="bg-primary-100 text-primary-800 dark:bg-primary-600 dark:text-white px-2 py-1 rounded-full text-xs font-medium">
                             {vlt}
                           </span>
                         ))}
@@ -237,18 +237,18 @@ const ServiceFilms = () => {
 
                   {/* DR OptiShade i */}
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       DR OptiShade i
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Neutral earth tone, low interior reflectance; complements wood floors and furnishings.
                     </p>
                     
                     <div className="mb-4">
-                      <h5 className="text-sm font-semibold text-gray-900 mb-2">VLT Options:</h5>
+                      <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">VLT Options:</h5>
                       <div className="flex flex-wrap gap-2">
                         {['15i', '25i', '35i'].map((vlt) => (
-                          <span key={vlt} className="bg-accent-100 text-accent-800 px-2 py-1 rounded-full text-xs font-medium">
+                          <span key={vlt} className="bg-accent-100 text-accent-800 dark:bg-accent-600 dark:text-white px-2 py-1 rounded-full text-xs font-medium">
                             {vlt}
                           </span>
                         ))}
@@ -259,7 +259,7 @@ const ServiceFilms = () => {
 
                 {/* Key Benefits */}
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Key Benefits
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -277,7 +277,7 @@ const ServiceFilms = () => {
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <p className="text-gray-700 text-sm">{benefit}</p>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">{benefit}</p>
                       </div>
                     ))}
                   </div>
@@ -286,13 +286,13 @@ const ServiceFilms = () => {
                 {/* Performance Data */}
                 <div className="py-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                       Performance Data
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Properties Measured:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Properties Measured:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Visible Light Transmitted (VLT)</li>
                           <li>• Visible Light Reflected (Interior/Exterior)</li>
                           <li>• UV Block</li>
@@ -304,8 +304,8 @@ const ServiceFilms = () => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Additional Metrics:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Additional Metrics:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Shading Coefficient</li>
                           <li>• Solar Heat Gain Coefficient (G-Value)</li>
                           <li>• U-Value Winter (IP & SI)</li>
@@ -343,18 +343,18 @@ const ServiceFilms = () => {
                 {/* VLT Options */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <Card className="p-6 text-center">
-                    <div className="inline-block bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <div className="inline-block bg-primary-100 text-primary-800 dark:bg-primary-600 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                       VLT 45i
                     </div>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
                       Moderate visible light transmission with excellent heat rejection
                     </p>
                   </Card>
                   <Card className="p-6 text-center">
-                    <div className="inline-block bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <div className="inline-block bg-primary-100 text-primary-800 dark:bg-primary-600 dark:text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                       VLT 70i
                     </div>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm">
                       High visible light transmission with superior heat rejection
                     </p>
                   </Card>
@@ -362,7 +362,7 @@ const ServiceFilms = () => {
 
                 {/* Key Benefits */}
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Key Benefits
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -379,7 +379,7 @@ const ServiceFilms = () => {
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <p className="text-gray-700 text-sm">{benefit}</p>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">{benefit}</p>
                       </div>
                     ))}
                   </div>
@@ -388,13 +388,13 @@ const ServiceFilms = () => {
                 {/* Performance Data */}
                 <div className="py-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                       Performance Data
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Properties Measured:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Properties Measured:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Visible Light Transmitted (VLT)</li>
                           <li>• Visible Light Reflected (Interior/Exterior)</li>
                           <li>• UV Block</li>
@@ -406,8 +406,8 @@ const ServiceFilms = () => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Additional Metrics:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Additional Metrics:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Shading Coefficient</li>
                           <li>• Solar Heat Gain Coefficient (G-Value)</li>
                           <li>• U-Value Winter (IP & SI)</li>
@@ -443,19 +443,19 @@ const ServiceFilms = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                   {/* NT PerLite Ceramic i */}
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       NT PerLite Ceramic i
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Durable ceramic-based neutral gray; low reflectance, high heat rejection; preserves natural view.
                     </p>
                     
                     <div className="mb-4">
-                      <h5 className="text-sm font-semibold text-gray-900 mb-2">VLT Options:</h5>
+                      <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">VLT Options:</h5>
                       <div className="grid grid-cols-4 gap-2">
                         {['20', '35', '50', '70'].map((vlt) => (
                           <div key={vlt} className="text-center p-2 bg-primary-50 rounded">
-                            <div className="inline-block bg-primary-100 text-primary-800 px-2 py-1 rounded-full text-xs font-semibold">
+                            <div className="inline-block bg-primary-100 text-primary-800 dark:bg-primary-600 dark:text-white px-2 py-1 rounded-full text-xs font-semibold">
                               VLT {vlt}
                             </div>
                           </div>
@@ -468,10 +468,10 @@ const ServiceFilms = () => {
                       <h5 className="text-sm font-semibold text-gray-900 mb-2">Safety Variant</h5>
                       <p className="text-gray-600 text-xs mb-2">NT PerLite Ceramic 35 for Safety</p>
                       <div className="flex justify-center space-x-2">
-                        <div className="inline-block bg-accent-100 text-accent-800 px-2 py-1 rounded-full text-xs font-semibold">
+                        <div className="inline-block bg-accent-100 text-accent-800 dark:bg-accent-600 dark:text-white px-2 py-1 rounded-full text-xs font-semibold">
                           6 mil
                         </div>
-                        <div className="inline-block bg-accent-100 text-accent-800 px-2 py-1 rounded-full text-xs font-semibold">
+                        <div className="inline-block bg-accent-100 text-accent-800 dark:bg-accent-600 dark:text-white px-2 py-1 rounded-full text-xs font-semibold">
                           10 mil
                         </div>
                       </div>
@@ -483,19 +483,19 @@ const ServiceFilms = () => {
 
                   {/* NT Natura i */}
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 mb-4">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white mb-4">
                       NT Natura i
                     </h4>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
                       Low-reflectance neutral gray with high heat rejection, glare reduction, and privacy.
                     </p>
                     
                     <div className="mb-4">
-                      <h5 className="text-sm font-semibold text-gray-900 mb-2">VLT Options:</h5>
+                      <h5 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">VLT Options:</h5>
                       <div className="grid grid-cols-3 gap-2">
                         {['05i', '15i', '30i'].map((vlt) => (
                           <div key={vlt} className="text-center p-2 bg-primary-50 rounded">
-                            <div className="inline-block bg-primary-100 text-primary-800 px-2 py-1 rounded-full text-xs font-semibold">
+                            <div className="inline-block bg-primary-100 text-primary-800 dark:bg-primary-600 dark:text-white px-2 py-1 rounded-full text-xs font-semibold">
                               VLT {vlt}
                             </div>
                           </div>
@@ -507,7 +507,7 @@ const ServiceFilms = () => {
 
                 {/* Shared Benefits */}
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Shared Benefits
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -523,7 +523,7 @@ const ServiceFilms = () => {
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <p className="text-gray-700 text-sm">{benefit}</p>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">{benefit}</p>
                       </div>
                     ))}
                   </div>
@@ -532,13 +532,13 @@ const ServiceFilms = () => {
                 {/* Performance Data */}
                 <div className="py-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                       Performance Data
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Properties Measured:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Properties Measured:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Visible Light Transmitted (VLT)</li>
                           <li>• Visible Light Reflected (Interior/Exterior)</li>
                           <li>• UV Block</li>
@@ -550,8 +550,8 @@ const ServiceFilms = () => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Additional Metrics:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Additional Metrics:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Shading Coefficient</li>
                           <li>• Solar Heat Gain Coefficient (G-Value)</li>
                           <li>• U-Value Winter (IP & SI)</li>
@@ -587,52 +587,52 @@ const ServiceFilms = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                   {/* DS Matte 2 mil */}
                   <Card className="p-4 text-center">
-                    <div className="inline-block bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                    <div className="inline-block bg-primary-100 text-primary-800 dark:bg-primary-600 dark:text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
                       DS Matte 2 mil
                     </div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                       Privacy/Frosted Look
                     </h4>
-                    <p className="text-gray-600 text-xs">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs">
                       Creates a frosted glass effect for privacy while maintaining light transmission
                     </p>
                   </Card>
 
                   {/* DS Black I */}
                   <Card className="p-4 text-center">
-                    <div className="inline-block bg-gray-800 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                    <div className="inline-block bg-gray-800 dark:bg-gray-700 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
                       DS Black I
                     </div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                       Blackout / Maximum Privacy
                     </h4>
-                    <p className="text-gray-600 text-xs">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs">
                       Complete blackout solution for maximum privacy and light control
                     </p>
                   </Card>
 
                   {/* DS White I */}
                   <Card className="p-4 text-center">
-                    <div className="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                    <div className="inline-block bg-gray-100 text-gray-800 dark:bg-gray-600 dark:text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
                       DS White I
                     </div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                       Whiteout / Privacy
                     </h4>
-                    <p className="text-gray-600 text-xs">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs">
                       White privacy film providing clean, modern appearance with light diffusion
                     </p>
                   </Card>
 
                   {/* DS UV Filter I */}
                   <Card className="p-4 text-center">
-                    <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold mb-3">
+                    <div className="inline-block bg-blue-100 text-blue-800 dark:bg-blue-600 dark:text-white px-3 py-1 rounded-full text-xs font-semibold mb-3">
                       DS UV Filter I
                     </div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                       Clear UV Filtering
                     </h4>
-                    <p className="text-gray-600 text-xs">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs">
                       Invisible UV protection while maintaining crystal clear visibility
                     </p>
                   </Card>
@@ -640,7 +640,7 @@ const ServiceFilms = () => {
 
                 {/* Key Features */}
                 <Card className="p-6">
-                  <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                  <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                     Key Features
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -658,7 +658,7 @@ const ServiceFilms = () => {
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <p className="text-gray-700 text-sm">{feature}</p>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm">{feature}</p>
                       </div>
                     ))}
                   </div>
@@ -667,13 +667,13 @@ const ServiceFilms = () => {
                 {/* Performance Data */}
                 <div className="py-8">
                   <Card className="p-6">
-                    <h4 className="text-xl font-heading font-bold text-gray-900 text-center mb-6">
+                    <h4 className="text-xl font-heading font-bold text-gray-900 dark:text-white text-center mb-6">
                       Performance Data
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Properties Measured:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Properties Measured:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Visible Light Transmitted (VLT)</li>
                           <li>• Visible Light Reflected (Interior/Exterior)</li>
                           <li>• UV Block</li>
@@ -685,8 +685,8 @@ const ServiceFilms = () => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="text-base font-semibold text-gray-900 mb-3">Additional Metrics:</h5>
-                        <ul className="space-y-1 text-gray-600 text-sm">
+                        <h5 className="text-base font-semibold text-gray-900 dark:text-white mb-3">Additional Metrics:</h5>
+                        <ul className="space-y-1 text-gray-600 dark:text-gray-300 text-sm">
                           <li>• Shading Coefficient</li>
                           <li>• Solar Heat Gain Coefficient (G-Value)</li>
                           <li>• U-Value Winter (IP & SI)</li>
