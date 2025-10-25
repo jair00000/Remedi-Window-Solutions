@@ -844,7 +844,7 @@ const ServiceFilms = () => {
             <Card className="p-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Dual Reflective Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-gray-400 mt-1">
                   (DR OptiTune / OptiShade)
                 </span>
               </h3>
@@ -872,7 +872,7 @@ const ServiceFilms = () => {
             <Card className="p-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Spectrally Selective Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-gray-400 mt-1">
                   (SP e-Lite i)
                 </span>
               </h3>
@@ -900,7 +900,7 @@ const ServiceFilms = () => {
             <Card className="p-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Neutral Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-gray-400 mt-1">
                   (NT PerLite Ceramic i / NT Natura i)
                 </span>
               </h3>
@@ -928,7 +928,7 @@ const ServiceFilms = () => {
             <Card className="p-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Reflective Interior Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-gray-400 mt-1">
                   (R Silver i, R Silver Low E, R Silver Safety)
                 </span>
               </h3>
@@ -956,7 +956,7 @@ const ServiceFilms = () => {
             <Card className="p-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                 Decorative / Specialty Films
-                <span className="block text-sm font-normal text-gray-600 dark:text-white mt-1">
+                <span className="block text-sm font-normal text-gray-600 dark:text-gray-400 mt-1">
                   (DS Matte, DS Black, DS White, DS UV Filter)
                 </span>
               </h3>

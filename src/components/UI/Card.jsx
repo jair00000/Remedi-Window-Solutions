@@ -7,7 +7,7 @@ const Card = ({
   padding = 'default',
   ...props 
 }) => {
-  const baseClasses = 'bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-200';
+  const baseClasses = 'bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-600 transition-all duration-200';
   const hoverClasses = hover ? 'hover:shadow-xl hover:-translate-y-1' : '';
   
   const paddingClasses = {
